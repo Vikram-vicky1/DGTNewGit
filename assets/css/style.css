@@ -366,6 +366,12 @@ nav {
     min-height: 100%;
   }
 
+  @media(max-width: 478px) {
+      #myvid {
+          width: 100%;
+      }
+  }
+
 
   #myvid2 {
     position: relative;
