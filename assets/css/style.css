@@ -245,6 +245,17 @@ nav {
 	/* transform: translateY(-50%); */
 }
 
+.text-box-4 {
+    position: relative;
+    background: linear-gradient(to right, #4393ca, #2f1b5d);
+    color: #fff;
+    padding-top: 20%;
+    border-bottom-right-radius: 200px;
+    vertical-align: middle;
+    
+	/* transform: translateY(-50%); */
+}
+
 .blue-color,.blue-gradient {
     width: 50%;
     background-color: #4393ca;
@@ -506,6 +517,7 @@ nav {
     font-family: myriad;
 }
 
+
 /* ------------ */
 /* carousel end */
 /* ------------ */
@@ -531,6 +543,7 @@ nav {
 
 .footer-header{
     color: #2f2971; 
+    font-size: 11px;
     font-weight: bold; 
     border-bottom: 1px solid #2f2971;
 }
@@ -538,7 +551,7 @@ nav {
 .footer-list2{
     color: #2f2971; 
     /* font-weight: bold;  */
-    font-size: 12px; 
+    font-size: 8px; 
     line-height: 1.5em; 
 }
 
