@@ -361,9 +361,9 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-xs-12">
                 <div class="text-left m-5">
-                    <h2 class="font-weight-bold text-white mb-3">Contact us.</h2>
-                    <h3 class="mb-3"  style="font-family: opensansItalic; color: #c3cccbe6;">For projects, customer support, more infos.</h3>
-                    <p class=" mb-5" style="color: #c3cccbe6;">
+                    <h2 class="font-weight-bold text-white mb-3" id="sub-headers">Contact us.</h2>
+                    <h3 class="mb-3"  style="font-family: opensansItalic; color: #c3cccbe6;" id="sub-headers2">For projects, customer support, more infos.</h3>
+                    <p class=" mb-5" style="color: #c3cccbe6;" id="sub-headers-p">
                         Email us with any questions or inquires. We would be happy to answer your questions and set up a meeting with you.
                         Gamify World can help set you apart from the flock!
                     </p>
@@ -371,9 +371,9 @@
                         <div class="row">
                             <div class="col-auto">
                                 <img src="../assets/images/icons/gmail-icon.png" height="25px" alt="">
-                            </div>
-                            <div class="col-10">
-                                office@gamifyworld.com
+                                <span class="col-10" id="sub-headers-p">
+                                    office@gamifyworld.com
+                                </span>
                             </div>
                         </div>
                         
@@ -382,9 +382,9 @@
                         <div class="row">
                             <div class="col-auto">
                                 <img src="../assets/images/icons/whatsapp.svg" alt="" style="height: 25px; background-color: #dee2e6; border-radius: 15px;">
-                            </div>
-                            <div class="col-10">
-                                +40753514961
+                                <span class="col-10" id="sub-headers-p">
+                                    +40753514961
+                                </span>
                             </div>
                         </div>
 
@@ -395,9 +395,9 @@
                         <div class="row">
                             <div class="col-auto">
                                 <img src="../assets/images/icons/facebook.svg" alt="" style="height: 25px; background-color: #dee2e6; border-radius: 15px;">
-                            </div>
-                            <div class="col-10">
-                                gamifyworld.com
+                                <span class="col-10" id="sub-headers-p">
+                                    gamifyworld.com
+                                </span>
                             </div>
                         </div>
                          
@@ -407,9 +407,9 @@
                         <div class="row">
                             <div class="col-auto">
                                 <img src="../assets/images/icons/youtube.svg" alt="" style="height: 25px; background-color: #dee2e6; border-radius: 15px;">
-                            </div>
-                            <div class="col-10">
-                                gamifyworld.com
+                                <span class="col-10" id="sub-headers-p">
+                                    gamifyworld.com
+                                </span>
                             </div>
                         </div>
                          
@@ -419,11 +419,11 @@
             </div>
             <div class="col-lg-6 col-md-6 col-xs-12">
                 <div class="mt-5 mb-4">
-                    <h3 class="mb-4" id="sub-headers2" style="color: #c3cccbe6; padding-left: 16%;">TELL US ABOUT YOUR PROJECT!</h3>
+                    <h3 class="mb-4" id="sub-headers2-contact" style="color: #c3cccbe6; padding-left: 16%;">TELL US ABOUT YOUR PROJECT!</h3>
                     <form action="">
                         <div class="form-group row">
                             <div class="col-2">
-                                <p class="text-right text-white">NAME</p>
+                                <p class="text-right text-white" id="sub-headers-p">NAME</p>
                             </div>
                             <div class="col-10">
                                 <input type="text" class="form-control" id="contact-input">
@@ -431,7 +431,7 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-2">
-                                <p  class="text-right text-white">COMPANY</p>
+                                <p  class="text-right text-white" id="sub-headers-p">COMPANY</p>
                             </div>
                             <div class="col-10">
                                 <input type="text" class="form-control" id="contact-input">
@@ -439,7 +439,7 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-2">
-                                <p  class="text-right text-white">LOCATION</p>
+                                <p  class="text-right text-white" id="sub-headers-p">LOCATION</p>
                             </div>
                             <div class="col-10">
                                 <input type="text" class="form-control" id="contact-input">
@@ -447,7 +447,7 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-2">
-                                <p class="text-right text-white">SUBJECT</p>
+                                <p class="text-right text-white" id="sub-headers-p">SUBJECT</p>
                             </div>
                             <div class="col-10">
                                 <input type="text" class="form-control" id="contact-input">
@@ -455,7 +455,7 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-2">
-                                <p class="text-right text-white">MESSAGE</p>
+                                <p class="text-right text-white" id="sub-headers-p">MESSAGE</p>
                             </div>
                             <div class="col-10">
                                 <textarea name="" class="form-control" id="" cols="51" rows="8" 
@@ -473,7 +473,7 @@
                                 <div class="row mb-4">
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                        <label class="custom-control-label text-light" for="customCheck1">SEND ME EMAIL COPY</label>
+                                        <label class="custom-control-label text-light" id="sub-headers-p" for="customCheck1" >SEND ME EMAIL COPY</label>
                                         <!-- <label class="custom-control-input text-light">SEND ME EMAIL COPY
                                             <input type="radio" name="radio">
                                             <span class="checkmark"></span>
@@ -516,7 +516,7 @@
             <div class="row">
                 <div class="col-6">
                     <div class="footer-list2">
-                        <a href="./template/products/software.html" class="act"> SOFTWARE </a><br>
+                        <a href="./template/products/software.html"> SOFTWARE </a><br>
                         <a href="./template/products/softwares/animations.html"> Animations </a><br>
                         <a href="./template/products/softwares/power_3d.html"> Power 3D </a><br>
                         <a href="./template/products/softwares/digital_twin.html" class="font-weight-bold "> Digital Twin </a><br>
@@ -529,7 +529,7 @@
                 <div class="col-6">
                     <div class="footer-list2">
                         <a href="./template/products/hardware.html"> HARDWARE </a><br>
-                        <a href="./template/products/hardware/magnetic_card.html"> NFC magnetic Cards/RFID</a><br>
+                        <a href="./template/products/hardware/magnetic_card.html"> NFC Magnetic Cards/RFID</a><br>
                         <a href="./template/products/hardware/interactive_light.html"> Interactive Light Panel</a><br>
                         <a href="./template/products/hardware/interactive_models.html"> Interactive Models</a><br>
                         <a href="./template/products/hardware/holograms.html"> Holograms</a><br>
@@ -537,27 +537,27 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-2">
-            <p class="footer-header pb-2">Digital twin</p>
+        <div class="col-md-1">
+            <p class="footer-header pb-2">DIGITAL TWIN</p>
             <div class="footer-list2">
-                <a href="./template/products/digital_twin/automotive.html"> Automotive - how it works </a><br>
-                <a href="./template/products/digital_twin/agriculture.html"> Agriculture 5G/ smart farming </a><br>
-                <a href="./template/products/digital_twin//industry.html"> Industry 4.0 / manufacturing </a><br>
-                <a href="./template/products/digital_twin/infrastructure.html"> Infrastructure / traffic </a><br>
-                <a href="./template/products/digital_twin/works.html"> 5G how it works / smart city </a><br>
-                <a href="./template/products/digital_twin/interactive_booths.html"> Interactive booth </a><br>
-                <a href="./template/products/digital_twin/hydraulic.html"> Hydraulic.</a>
+                <a href="./template/products/digital_twin/automotive.html"> Automotive </a><br>
+                <a href="./template/products/digital_twin/agriculture.html"> Agriculture 5G </a><br>
+                <a href="./template/products/digital_twin//industry.html"> Industry 4.0 </a><br>
+                <a href="./template/products/digital_twin/infrastructure.html"> Infrastructure </a><br>
+                <a href="./template/products/digital_twin/works.html"> 5G How it Works  </a><br>
+                <a href="./template/products/digital_twin/interactive_booths.html"> Interactive Booth </a><br>
+                <a href="./template/products/digital_twin/hydraulic.html"> Hydraulic</a>
             </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
             <p class="footer-header pb-2">SERVICES</p>
             <div class="footer-list2">
-                <a href="./template/services/animation.html"> Animations and Scenarios creation </a><br>
-                <a href="./template/services/3d_model.html"> 3d models creation, CAD, 3D scanning, Post-Processing </a><br>
-                <a href="./template/services/content_creation.html"> Content creation </a><br>
-                <a href="./template/services/light_panels.html"> Interactive light panels design and production </a><br>
-                <a href="./template/services/interactive_models.html"> Interactive models design and production </a><br>
-                <a href="./template/services/exhibition_booths.html"> Exhibition Booths / Digital Corners planning and implementation </a>
+                <a href="./template/services/animation.html"> Animations and Scenarios Creation </a><br>
+                <a href="./template/services/3d_model.html"> 3d Model Creation, CAD, 3D Scanning, Post-Processing </a><br>
+                <a href="./template/services/content_creation.html"> Content Creation </a><br>
+                <a href="./template/services/light_panels.html"> Interactive Light Panels Design and Production </a><br>
+                <a href="./template/services/interactive_models.html"> Interactive Models Design and Production </a><br>
+                <a href="./template/services/exhibition_booths.html"> Exhibition Booths / Digital Corners Planning and Implementation </a>
             </div>
         </div>
         <div class="col-md-1">
@@ -585,6 +585,36 @@
         </div>
     </div>
 </div>
+<div class="container-fluid footer_wrapper22">
+    <div class="row ">
+        <div class="col-6">
+            <img src="./assets/images/logo.svg" alt="" height="40px" class="pt-2">
+        </div>
+        <div class="col-6">
+            <div class="pt-2 row ">
+                <div style="position: absolute; right: 10%;">
+                    <img src="../../assets/images/icons/facebook.svg" alt="" height="25px">
+                    <img src="../../assets/images/icons/whatsapp.svg" class="mx-2" alt="" height="25px">
+                    <img src="../../assets/images/icons/youtube.svg" alt="" height="25px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col-12 footer-list_mobile">
+                <span class="p-1">PRIVACY POLICY</span>
+                <span class="p-1">TERMS OF USE</span>
+                <span class="p-1">LEGAL</span>
+                <span class="p-1">CUSTOMER SUPPORT</span>
+                <span class="p-1">DESKTOP VERSION</span>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-12 footer-list_mobile text-center">
+            Digital Agency Software&reg; 2020 All rights reserved.
+        </div>
+    </div>
+</div> 
 
 <!-- /footer end -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
