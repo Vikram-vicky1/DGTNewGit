@@ -31,6 +31,37 @@
     box-sizing: border-box;
 }
 
+.tracking-in-expand:hover {
+	-webkit-animation: tracking-in-expand 0.7s linear both;
+            animation: tracking-in-expand 0.7s linear both;
+            
+}
+
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
 
 /* Navbar */
 
@@ -101,8 +132,10 @@ nav {
     font-size: 12px;
     margin: auto;
     align-items: center;
+    border: 1px;
     background-image: linear-gradient(to right, #4393ca, #2f1b5d);
 }
+
 .card-products1 {
     height: 175px;
 }
@@ -123,6 +156,10 @@ nav {
     font-size: 12px;
     border-radius: 50%;
     background-color: #2f1b5d;
+}
+
+.cardheight:hover{
+    background-image: linear-gradient(to right, #4393ca, #2f1b5d);
 }
 
 .cardheight .card-body {
@@ -548,6 +585,7 @@ nav {
   @media(max-width: 478px) {
       #myvid {
           width: 100%;
+          height: auto;
       }
   }
 
@@ -787,16 +825,19 @@ nav {
 /* /footer */
 
 .bg-number{
+    display: none;
     font-size: 150px;
     opacity: 0.1;
     color: #fff;
     font-weight: 1000;
+    
 } 
 
 /* @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){ */
  @media (max-width:760px){
 
     .bg-number{
+        display: none;
         font-size: 70px;
         opacity: 0.1;
         color: #fff;
@@ -1092,6 +1133,7 @@ body .offcanvas-active{
 
  .footer-list_mobile{
     color: #2f2971; 
+    text-align: center;
     font-weight: bold; 
     font-size: 8px; 
     line-height: 1.5em;

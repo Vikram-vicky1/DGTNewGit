@@ -7,6 +7,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>DGT</title>
     <link rel="icon" href="../../../assets/images/favicon.png" type="image/gif" sizes="64x64">
+    <!-- animation css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../assets/css/fullpage.css">
     <link rel="stylesheet" href="../../../assets/css/style.css">
@@ -61,7 +63,7 @@
                     </p>
                 </a>
 
-                <div class="row">
+                <div class="row mx-3">
                     <div class="col-4">
                         <div class="card card-products">
                             <div class="card-body">
@@ -90,7 +92,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mx-3">
                     <div class="col-4">
                         <div class="card card-products">
                             <div class="card-body">
@@ -119,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mx-3">
                     <div class="col-4">
                         <div class="card border-0 card-products d-none">
                             <div class="card-body">
@@ -316,7 +318,7 @@
                 <div class="card cardheight" id="slidetwobg">
                     <div class="card-body">
                         <a href="../../../template/services/content_creation.html">
-                            <p class="card-text text-white text-center" >Content creation</p>
+                            <p class="card-text text-white text-center" >Content Creation</p>
                         </a>
                     </div>
                 </div>
@@ -326,7 +328,7 @@
                     <div class="card-body">
                         <a href="../../../template/services/light_panels.html">
                             <p class="card-text text-white text-center" >Interactive Light
-                                Panels design and production</p>
+                                Panels Design and Production</p>
                         </a>
                     </div>
                 </div>
@@ -336,7 +338,7 @@
                     <div class="card-body">
                         <a href="../../../template/services/interactive_models.html">
                             <p class="card-text text-white text-center" >Interactive Models
-                                design and production</p>
+                                Design and Production</p>
                         </a>
                     </div>
                 </div>
@@ -365,12 +367,12 @@
                     <div class="row w-100 mx-auto" style="margin-top: 100px !important;">
                         <div class="col-lg-6 col-md-6 col-xs-12">
                             <div class="container">
-                                <span style="font-size:150px; opacity:0.3; color: #2f1b5d; font-weight: 1000">01</span>
+                                <!-- <span style="font-size:150px; opacity:0.1; color: #2f1b5d; font-weight: 1000">01</span> -->
                                 <p
-                                    style="font-size: 28px; color:#2f1b5d; margin-top: -20%; margin-left: 10%; font-weight: 800;">
+                                    style="font-size: 28px; color:#2f1b5d;  font-weight: 800;">
                                     Animations
                                 </p>
-                                    <div class="text-left pl-5 ml-3">
+                                    <div class="text-left ">
                                         <p id="sub-headers2">Animate and level up</p>
                                         <p class="sub_text">
                                             We create animations and visual effects applicable to a broad range of businesses,
@@ -384,10 +386,11 @@
                                             customer experience transformations.
                                         </p>
                                     </div>
-                                    <div class="pl-5 ml-3 mt-4">
+                                    <div class=" mt-4">
+                                        <a href="../../../assets/pdf/DGT- Business Cards.pdf" download>
                                         <button class="btn text-light mx-auto" type="button" id="btn-subheader1">
                                             Download PDF
-                                        </button>
+                                        </button></a>
                                     </div>
                             </div>
                         </div>
@@ -399,45 +402,61 @@
             </div>
             <!--/First slide -->
         </div>
-        <div class="section fp-auto-height-responsive" id="section1">
-            <img src="../../../assets/images/slider_img/slider_img_1.jpg" class="w-100" style="height: auto;">
-
-        </div>
         <div class="section fp-auto-height-responsive" id="section2">
             <div class="carousel_item d-flex">
                 <div class="wrapper" style="background-color: #2f1b5d; min-height: 100vh; padding: 6em 4px; position: absolute; top: 12%;" >
-                    <h3 class="mb-4 text-center text-white" id="sub-headers3" style="font-family: opensansitalic; 
-                    ">
+                    <div class="animation-element slide-left testimonial">
+                        <h3 class="mb-4 text-center text-white tracking-in-expand" id="sub-headers3" 
+                        style="font-family: opensansitalic; text-shadow: 2px 2px 4px #000000;">
                         Animation Features
-                    </h3>
+                     </h3>
+                    </div>
+                    
+                    
+                    <!-- <h1 class="animate__animated animate__bounce">Animation Features
+                    </h1> -->
                     <div class="container-fluid">
-                        <div class="row m-1 p-0">
-                            <div class="col-lg-4">
-                                <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">01</span>
-                                <p
-                                    style="color:#fff; margin-top: -18%; margin-left: 20%; font-weight: bold;text-transform: uppercase;">
-                                    User Friendly Presentation of Production Lines</p>
-    
-                                <p style=" color:#fff;margin-left: 20%;">Catch even the most subtle differences between same range products
-                                </p>
+                        <div class="row m-0 p-0">
+                            <div class="col-lg-4 my-5 ">
+                                <div class="card px-2 border-0" style="background-color: #2f1b5d;" >
+                                    <div class="card-body">
+                                        <p class="card-title" style="color:#fff; font-weight: bold;text-transform: uppercase;">
+                                            User Friendly Presentation of Production Lines</p>
+                                        <p class="card-text text-light" >
+                                            Catch even the most subtle differences between same range products
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">01</span> -->
+                                
                             </div>
-                            <div class="col-lg-4">
-                                <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">02</span>
-                                <p
-                                    style="color:#fff; margin-top: -18%; margin-left: 20%; font-weight: bold;text-transform: uppercase;">
-                                    Customer Attraction</p>
-                                <p style=" color:#fff;margin-left: 20%;">
-                                    Fun discovery journeys, creation and design experiences, photos and videos capture of the products
-                                </p>
+                            <div class="col-lg-4 my-5">
+                                <div class="card px-2 border-0" style="background-color: #2f1b5d;" >
+                                    <div class="card-body">
+                                        <p class="card-title" style="color:#fff; font-weight: bold;text-transform: uppercase;">
+                                            Customer Attraction </p>
+                                        <p class="card-text text-light" >
+                                            Fun discovery journeys, creation and design experiences, photos and videos capture of the products
+                                
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">02</span> -->
+                                
                             </div>
-                            <div class="col-lg-4">
-                                <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">03</span>
-                                <p
-                                    style="color:#fff; margin-top: -18%; margin-left: 20%; font-weight: bold;text-transform: uppercase;">
-                                    Processes Optimization and Strong Security</p>
-                                <p style="color:#fff; margin-left: 20%;">
-                                    Minimized resources, high speed and efficiency, short time implementation, remote collaboration, training cost reduction, low cloud storage resources and traffic costs
-                                </p>
+                            <div class="col-lg-4 my-5">
+                                <div class="card px-2 border-0" style="background-color: #2f1b5d;" >
+                                    <div class="card-body">
+                                        <p class="card-title" style="color:#fff; font-weight: bold;text-transform: uppercase;">
+                                            Processes Optimization and Strong Security </p>
+                                        <p class="card-text text-light" >
+                                            Minimized resources, high speed and efficiency, short time implementation, remote collaboration, training cost reduction, low cloud storage resources and traffic costs
+                                
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">03</span> -->
+                                
                             </div>
                         </div>
                     </div>
@@ -496,7 +515,7 @@
                             <div class="col-6">
                                 <div class="footer-list2">
                                     <a href="../../../template/products/hardware.html"> HARDWARE </a><br>
-                                    <a href="../../../template/products/hardware/magnetic_card.html"> NFC magnetic Cards/RFID</a><br>
+                                    <a href="../../../template/products/hardware/magnetic_card.html"> NFC Magnetic Cards/RFID</a><br>
                                     <a href="../../../template/products/hardware/interactive_light.html"> Interactive Light Panel</a><br>
                                     <a href="../../../template/products/hardware/interactive_models.html"> Interactive Models</a><br>
                                     <a href="../../../template/products/hardware/holograms.html"> Holograms</a><br>
@@ -504,27 +523,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2">
-                        <p class="footer-header pb-2">Digital twin</p>
+                    <div class="col-md-1">
+                        <p class="footer-header pb-2">DIGITAL TWIN</p>
                         <div class="footer-list2">
-                            <a href="../../../template/products/digital_twin/automotive.html"> Automotive - how it works </a><br>
-                            <a href="../../../template/products/digital_twin/agriculture.html"> Agriculture 5G/ smart farming </a><br>
-                            <a href="../../../template/products/digital_twin//industry.html"> Industry 4.0 / manufacturing </a><br>
-                            <a href="../../../template/products/digital_twin/infrastructure.html"> Infrastructure / traffic </a><br>
-                            <a href="../../../template/products/digital_twin/works.html"> 5G how it works / smart city </a><br>
-                            <a href="../../../template/products/digital_twin/interactive_booths.html"> Interactive booth </a><br>
+                            <a href="../../../template/products/digital_twin/automotive.html"> Automotive  </a><br>
+                            <a href="../../../template/products/digital_twin/agriculture.html"> Agriculture 5G </a><br>
+                            <a href="../../../template/products/digital_twin//industry.html"> Industry 4.0  </a><br>
+                            <a href="../../../template/products/digital_twin/infrastructure.html"> Infrastructure  </a><br>
+                            <a href="../../../template/products/digital_twin/works.html"> 5G How it Works </a><br>
+                            <a href="../../../template/products/digital_twin/interactive_booths.html"> Interactive Booth </a><br>
                             <a href="../../../template/products/digital_twin/hydraulic.html"> Hydraulic.</a>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <p class="footer-header pb-2">SERVICES</p>
                         <div class="footer-list2">
-                            <a href="../../../template/services/animation.html"> Animations and Scenarios creation </a><br>
-                            <a href="../../../template/services/3d_model.html"> 3d models creation, CAD, 3D scanning, Post-Processing </a><br>
-                            <a href="../../../template/services/content_creation.html"> Content creation </a><br>
-                            <a href="../../../template/services/light_panels.html"> Interactive light panels design and production </a><br>
-                            <a href="../../../template/services/interactive_models.html"> Interactive models design and production </a><br>
-                            <a href="../../../template/services/exhibition_booths.html"> Exhibition Booths / Digital Corners planning and implementation </a>
+                            <a href="../../../template/services/animation.html"> Animations and Scenarios Creation </a><br>
+                            <a href="../../../template/services/3d_model.html"> 3d Models Creation, CAD, 3D Scanning, Post-Processing </a><br>
+                            <a href="../../../template/services/content_creation.html"> Content Creation </a><br>
+                            <a href="../../../template/services/light_panels.html"> Interactive Light Panels Design and Production </a><br>
+                            <a href="../../../template/services/interactive_models.html"> Interactive Models Design and Production </a><br>
+                            <a href="../../../template/services/exhibition_booths.html"> Exhibition Booths / Digital Corners Planning and Implementation </a>
                         </div>
                     </div>
                     <div class="col-md-1">
@@ -552,6 +571,36 @@
                     </div>
                 </div>
             </div>
+            <div class="container-fluid footer_wrapper22">
+                <div class="row ">
+                    <div class="col-6">
+                        <img src="./assets/images/logo.svg" alt="" height="40px" class="pt-2">
+                    </div>
+                    <div class="col-6">
+                        <div class="pt-2 row ">
+                            <div style="position: absolute; right: 10%;">
+                                <img src="../../assets/images/icons/facebook.svg" alt="" height="25px">
+                                <img src="../../assets/images/icons/whatsapp.svg" class="mx-2" alt="" height="25px">
+                                <img src="../../assets/images/icons/youtube.svg" alt="" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-12 footer-list_mobile">
+                            <span class="p-1">PRIVACY POLICY</span>
+                            <span class="p-1">TERMS OF USE</span>
+                            <span class="p-1">LEGAL</span>
+                            <span class="p-1">CUSTOMER SUPPORT</span>
+                            <span class="p-1">DESKTOP VERSION</span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12 footer-list_mobile text-center">
+                        Digital Agency Software&reg; 2020 All rights reserved.
+                    </div>
+                </div>
+            </div> 
         </div>
         <!-- /footer end -->
 
@@ -586,6 +635,33 @@
             }
 
         });
+
+        // var $animation_elements = $('.animation-element');
+        // var $window = $(window);
+
+        // function check_if_in_view() {
+        // var window_height = $window.height();
+        // var window_top_position = $window.scrollTop();
+        // var window_bottom_position = (window_top_position + window_height);
+        
+        // $.each($animation_elements, function() {
+        //     var $element = $(this);
+        //     var element_height = $element.outerHeight();
+        //     var element_top_position = $element.offset().top;
+        //     var element_bottom_position = (element_top_position + element_height);
+        
+        //     //check to see if this current container is within viewport
+        //     if ((element_bottom_position >= window_top_position) &&
+        //         (element_top_position <= window_bottom_position)) {
+        //     $element.addClass('in-view');
+        //     } else {
+        //     $element.removeClass('in-view');
+        //     }
+        // });
+        // }
+
+        // $window.on('scroll resize', check_if_in_view);
+        // $window.trigger('scroll');
     </script>
 </body>
 

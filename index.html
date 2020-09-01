@@ -35,8 +35,8 @@
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item mx-auto dropdown d-lg-block d-none">
-                    <a class="nav-link dropdown-toggle productsList" href="#products1" data-toggle="dropdown"
-                        data-target="" aria-expanded="false" aria-controls="productsList" id="productsList">Products</a>
+                    <a class="nav-link dropdown-toggle productsList" href="#products1"  data-toggle="dropdown" data-target=""
+                        aria-expanded="false" aria-controls="productsList" id="productsList">Products</a>
                 </li>
                 <li class="d-lg-none d-block" >
                     <a href="#" data-toggle="collapse" data-target="#toggleDemo"  class="collapsed nav-link dropdown-toggle"
@@ -185,7 +185,7 @@
             <div class="col-md-4" id="borderstyle">
                 <a href="./template/products/digitaltwin.html">
                 <p class="text-center nav_link font-weight-bold">
-                     DIGITAL AGENCY 
+                    DIGITAL TWIN
                 </p>
                 </a>
 
@@ -278,7 +278,7 @@
             <div class="col-md-4 my-1">
 
                 <p class="text-center nav_link font-weight-bold">
-                   <a href="./template/products/hardware.html">HARDWARE</a> </p>
+                <a href="./template/products/hardware.html">HARDWARE</a> </p>
                 <div class="row mx-3">
                     <div class="col-6">
                         <div class="card card-products1" id="slidetwobg">
@@ -406,95 +406,119 @@
     <!-- <div ng-view></div> -->
 
 
-
-
-
-
     <!-- main start -->
     <div id="fullpage">
 
         <div class="section active fp-auto-height-responsive" id="section0">
             <!--First slide-->
-            <div class="carousel_item h-100" data-section-name="video">
+            <div class="carousel_item" data-section-name="video">
                 <div class="video-overlay"></div>
-                <div id="myvid">
-                    <img src="./assets/images/slider_img/slider_img_1.jpg" alt="" class="" style="width: 100%; height: 100vh">
-                </div>
-                <!-- <video muted loop id="myvid" class="video">
-                    <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
-                    <source src="./assets/images/slider_img/slider_img_1.jpg" type="">
-                </video> -->
+                <video id="myvid" class="video w-100 h-auto" poster="./assets/images/slider_img/slider_img_1.jpg">
+                    <source src="./assets/images/DGT.mp4" type="video/mp4">
+                </video>
                 <div class="carousel-caption">
-                    <div class="text-box text-center">
+                    <div class="text-box text-center" >
                         <h1 class="font-weight-bold mb-4" id="sub-headers">DGT Digital Agency</h1>
                         <h3 class="mb-4 text-white" id="sub-headers2">We create the paths. Your customers will take the
                             journey.</h3>
-                        <h4 class="text-light mb-5" id="sub-headers-p">
+                        <h5 class="text-light mb-5" id="sub-headers-p">
                             As a digital agency with cross disciplinary skills and expertise, we integrate software and
                             hardware for great projects, ranging from visual content, simulation and modeling, automated
                             3D models,
                             holograms projections, interactive light panels, traceability and technology, to interactive
                             exhibition booths, digital corner design, gaming setups, virtual booths and tours or
                             training programs.
-                        </h4>
+                        </h5>
                         <div class="text-center">
                             <button class="btn text-light mt-2 active" type="button" id="btn-subheader-home"
-                                style="margin-top:10% !important">Watch Video</button>
+                                style="margin-top:10% !important;" onclick="playPause()">Watch Video</button>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!--/First slide -->
         </div>
 
         <div class="section fp-auto-height-responsive" id="section1">
-            <div class="carousel_item" style="margin-top: 0%;">
-                <div class="text-box-3">
+            <div class="carousel_item " style="margin-top: 0%;">
+                <div class="text-box-3 container-fluid">
                     <div class="row">
                         <div class="col-12">
                             <h3 class="mb-4 text-center text-white" id="sub-headers3"
                                 style="font-family: opensansitalic">
                                 What we do?
                             </h3>
-                            <div class="row m-0 p-0">
-                                <div class="col-lg-4">
-                                    <span class="bg-number">01</span>
-                                    <p id="bg_number_header">
+                            <div class="row m-0 p-0" >
+                                <div class="col-lg-4 mt-5" >
+                                    <div class="card px-2 border-0" style="background-color: #2f1b5d;" >
+                                        <div class="card-body">
+                                            <p class="card-title" style="color:#fff; font-weight: bold;text-transform: uppercase;">
+                                                Overall ‘how it works’ Experiences</p>
+                                            <p class="card-text text-light" >
+                                                Guided by 3D views, 3D product explosion effects, real time simulation,
+                                                holograms and best suited media and digital equipment
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- <span class="bg-number">01</span>
+                                    <p
+                                    style="color:#fff;   font-weight: bold;text-transform: uppercase;">
                                         Overall ‘how it works’ Experiences</p>
-
-                                    <p style=" margin-left: 20%;" id="sub-headers-p1">
+                                    <p  id="sub-headers-p1" class="text-justify">
                                         Guided by 3D views, 3D product explosion effects, real time simulation,
                                         holograms and best suited media and digital equipment
-                                    </p>
+                                    </p> -->
                                 </div>
-                                <div class="col-lg-4">
-                                    <span class="bg-number">02</span>
-                                    <p id="bg_number_header">
+                                <div class="col-lg-4 mt-5" >
+                                    <div class="card px-2 border-0" style="background-color: #2f1b5d;" >
+                                        <div class="card-body">
+                                            <p class="card-title" style="color:#fff;   font-weight: bold;text-transform: uppercase;">
+                                                Processes Optimization and Strong Security</p>
+                                            <p class="card-text text-light" >
+                                                Minimized resources, high speed and efficiency, short time implementation, 
+                                                remote collaboration, training cost reduction, low cloud storage resources 
+                                                and traffic costs
+                                    
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- <span class="bg-number">02</span>
+                                    <p
+                                    style="color:#fff;   font-weight: bold;text-transform: uppercase;">
                                         Processes Optimization and Strong Security</p>
-                                    <p style=" margin-left: 20%;" id="sub-headers-p1">
+                                    <p  id="sub-headers-p1" class="text-justify">
                                         Minimized resources, high speed and efficiency, short time implementation, remote collaboration, training cost reduction, low cloud storage resources and traffic costs
-                                    </p>
+                                    </p> -->
                                 </div>
-                                <div class="col-lg-4">
-                                    <span class="bg-number">03</span>
-                                    <p id="bg_number_header"
-                                        >
+                                <div class="col-lg-4 mt-5" >
+                                    <div class="card px-2 border-0" style="background-color: #2f1b5d;" >
+                                        <div class="card-body">
+                                            <p class="card-title" style="color:#fff; font-weight: bold; text-transform: uppercase;">
+                                                Customer Attraction</p>
+                                            <p class="card-text text-light">
+                                                Fun discovery journeys, creation and design experiences, photos and videos capture of the products, within the application
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- <span class="bg-number">03</span>
+                                    <p
+                                    style="color:#fff;   font-weight: bold;text-transform: uppercase;">
                                         Customer Attraction</p>
-                                    <p style=" margin-left: 20%;" id="sub-headers-p1">
+                                    <p  id="sub-headers-p1" class="text-justify">
                                         Fun discovery journeys, creation and design experiences, photos and videos capture of the products, within the application
-                                    </p>
+                                    </p> -->
                                 </div>
                             </div>
                             <div class="text-center">
                                 <button class="btn text-light mt-2" type="button" id="btn-subheader1"
-                                style="margin-top:7% !important">Download Brochure</button>
+                                style="margin-top:18% !important">Download Brochure</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-
         </div>
 
         <div class="section  fp-auto-height-responsive" id="section2">
@@ -606,23 +630,23 @@
         <!-- Footer start -->
         <div class="section fp-auto-height-responsive footer_section" id="section6" >
             <div class="container-fluid"  id="slidetwobgright">
-                    <div class="row">
-                        <div class="col-12 mt-5 pt-3">
-                            <h1 class="font-weight-bold mb-4 text-white text-center" id="sub-headers">Who we are</h1>
-                        </div>
-                        <div class="col-12">
-                            <h4 class="text-light mb-3 text-center" id="sub-headers2" >We are a Romanian-Canadian team of experts in <br>
-                                gamiﬁcation, digitalization, graphics, UI-UX, animations, <br>
-                                digital equipment, production and optimization.
-                            </h4>
-                            <p class="text-light text-center" style="font-family: robotoRegular;">Do you have a project? Let us know!</p>                            
-                            <a href="./template/contact.html" class="">
-                                <button class="btn text-light d-block mx-auto mt-2" type="button" id="btn-subheader">
-                                    CONTACT US
-                                </button>
-                            </a>
-                        </div>
+                <div class="row">
+                    <div class="col-12 mt-5 pt-3">
+                        <h1 class="font-weight-bold mb-4 text-white text-center" id="sub-headers">Who we are</h1>
                     </div>
+                    <div class="col-12">
+                        <h4 class="text-light mb-3 text-center" style="font-family: opensansItalic;">We are a Romanian-Canadian team of experts in <br>
+                            gamiﬁcation, digitalization, graphics, UI-UX, animations, <br>
+                            digital equipment, production and optimization.
+                        </h4>
+                        <p class="text-light text-center" style="font-family: robotoRegular;">Do you have a project? Let us know!</p>                            
+                        <a href="../../template/contact.html" class="">
+                            <button class="btn text-light d-block mx-auto mt-2" type="button" id="btn-subheader">
+                                CONTACT US
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="container-fluid footer_wrapper">
                 <div class="row">
@@ -774,6 +798,16 @@
             }
 
         });
+
+        var myvid = document.getElementById("myvid");
+
+        function playPause(){
+            if(myvid.paused){
+                myvid.play();
+            } else {
+                myvid.pause();
+            }
+        }
     </script>
 </body>
 
