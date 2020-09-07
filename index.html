@@ -30,18 +30,23 @@
                 <button class="btn btn-outline-light btn-close float-right fas"> &timesbar; close </button>
                 <a class="navbar-brand" href="/"><img src="../../assets/images/logo.svg" height="40" alt=""></a>
             </div>
+<<<<<<< HEAD
             <ul class="navbar-nav text-center w-100">
                 <li class="nav-item mx-auto active" style="text-decoration: underline;">
                     <a class="nav-link" href="/" >Home <span class="sr-only">(current)</span></a>
+=======
+            <ul class="navbar-nav text-center mobile_nav" style="width: 120px">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+>>>>>>> 6303ee8aef82bdaf522cf62ee49456e36f1e9eb4
                 </li>
-                <li class="nav-item mx-auto dropdown d-lg-block d-none">
+                <li class="nav-item dropdown d-lg-block d-none">
                     <a class="nav-link dropdown-toggle productsList" href="#products1"  data-toggle="dropdown" data-target=""
                         aria-expanded="false" aria-controls="productsList" id="productsList">Products</a>
                 </li>
                 <li class="d-lg-none d-block" >
                     <a href="#" data-toggle="collapse" data-target="#toggleDemo"  class="collapsed nav-link dropdown-toggle"
-                    style="margin-top: 5%;">
-                    </span class="font-weight-bold text-white"> Products </span>
+                    style="margin-top: 5%;">Products
                     </a>
                     <ul class="collapse" id="toggleDemo" style="list-style: none; margin-top: -6%; margin-left: -35%;">
                         <li>
@@ -59,7 +64,14 @@
                                 </ul>
                             
                         </li>
-                        <li><a href="#" class="text-white dropdown-toggle">hardware</a></li>
+                        <li><a href="#"  class="text-white dropdown-toggle collapsed" data-toggle="collapse" data-target="#togglechild2">Hardware</a>
+                            <ul class="collapse" id="togglechild2" style="list-style: none;">
+                                <li><a href="#" class="text-white">NFC Magnetic Cards/RFID</a></li>
+                                <li><a href="#" class="text-white">Interactive Light Panel</a></li>
+                                <li><a href="#" class="text-white">Interactive Models</a></li>
+                                <li><a href="#" class="text-white">Hologram</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#" class="text-white dropdown-toggle">digital twin</a></li>
                     </ul>
                   </li>

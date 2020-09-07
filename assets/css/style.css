@@ -1148,14 +1148,32 @@ body .offcanvas-active{
 
  @media(max-width: 520px) {
     .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .nav-link {
-        left: -50px;
+        left: -25px;
     } 
 
     ul#toggleDemo, ul#toggleDemo1 {
-        margin-left: 5% !important;
+        margin-left: 25% !important;
+        width: 120px;
+        margin-top: -40% !important;
     }
     ul#toggleDemo li, ul#toggleDemo1 li {
         padding-top: 1em
+    }
+    .mobile_nav {
+        width: 120px;
+    }
+
+    .mobile_nav li a{
+        margin-left: 1em;
+    }
+    ul#togglechild1, ul#togglechild2 {
+        width: 150px !important;
+        margin-top: -50%;
+        margin-left: 60%;
+    }
+
+    ul#togglechild1 li, ul#togglechild2 li {
+        width: 150px !important;
     }
  }
 
