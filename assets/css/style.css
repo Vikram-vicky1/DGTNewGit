@@ -1116,6 +1116,19 @@ body .offcanvas-active{
     left: -200px;
  }
 
+ @media(max-width: 520px) {
+    .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .nav-link {
+        left: -50px;
+    } 
+
+    ul#toggleDemo, ul#toggleDemo1 {
+        margin-left: 5% !important;
+    }
+    ul#toggleDemo li, ul#toggleDemo1 li {
+        padding-top: 1em
+    }
+ }
+
  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: #fff;
 }
