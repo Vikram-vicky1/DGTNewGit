@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DGT</title>
+    <link rel="icon" href="../../../assets/images/favicon.png" type="image/gif" sizes="64x64">
+    <!-- animation css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../assets/css/fullpage.css">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <base href="/">
+</head>
+
+<body ng-controller="bodyController" class='h-100'>
+    <!-- Header start-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <a class="navbar-brand" href="/"><img src="../../assets/images/logo.svg" height="60" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav text-center w-100">
+                <li class="nav-item mx-auto active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mx-auto dropdown">
+                    <a class="nav-link dropdown-toggle productsList" href="#products1" data-toggle="dropdown"
+                        data-target="" aria-expanded="false" aria-controls="productsList" id="productsList" style="text-decoration: underline;">
+                        Products
+                    </a>
+
+                </li>
+                <li class="nav-item mx-auto dropdown">
+                    <a class="nav-link dropdown-toggle" href="#services" data-toggle="dropdown" data-target=""
+                        aria-expanded="false" aria-controls="serviceListList" id="serviceListList">Services</a>
+
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link" href="../../../template/gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a class="nav-link" href="../../../template/contact.html">Contact</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+    </nav>
+
+    <div class="container-fluid collapse" id="products1">
+        <div class="row w-100 mb-4">
+            <div class="col-md-4">
+
+                <a href="../../../template/products/software.html">
+                    <p class="text-center nav_link font-weight-bold">
+                        SOFTWARE
+                    </p>
+                </a>
+
+                <div class="row mx-3">
+                    <div class="col-4">
+                        <div class="card card-products">
+                            <div class="card-body">
+                                <a href="../../../template/products/softwares/animations.html">
+                                    <p class="card-text text-white text-center">Animations</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-products">
+                            <div class="card-body">
+                                <a href="../../../template/products/softwares/power_3d.html">
+                                    <p class="card-text text-white text-center">Power 3D</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-products">
+                            <div class="card-body">
+                                <a href="../../../template/products/softwares/digital_twin.html">
+                                    <p class="card-text text-white text-center">DIGITAL TWIN</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-3">
+                    <div class="col-4">
+                        <div class="card card-products">
+                            <div class="card-body">
+                                <a href="../../../template/products/softwares/training_3d.html">
+                                    <p class="card-text text-white text-center">Training 3D</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-products">
+                            <div class="card-body">
+                                <a href="../../../template/products/softwares/service_3d.html">
+                                    <p class="card-text text-white text-center">Services 3D</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-products">
+                            <div class="card-body">
+                                <a href="../../../template/products/softwares/vr_ar.html">
+                                    <p class="card-text text-white text-center">VR/AR</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-3">
+                    <div class="col-4">
+                        <div class="card border-0 card-products d-none">
+                            <div class="card-body">
+                                <p class="card-text text-white text-center"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-products">
+                            <div class="card-body">
+                                <a href="../../../template/products/softwares/virtual_tour.html">
+                                    <p class="card-text text-white text-center">Virtual Tour</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card border-0 card-products d-none">
+                            <div class="card-body border-0">
+                                <p class="card-text text-white text-center"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" id="borderstyle">
+                <a href="../../../template/products/digitaltwin.html">
+                    <p class="text-center nav_link font-weight-bold">Digital Twin</p>
+                </a>
+                <div class="row mx-3">
+                    <div class="col-4">
+                        <div class="card card-products">
+                            <div class="card-body">
+                                <a href="../../../template/products/digital_twin/automotive.html">
+                                    <p class="card-text text-white text-center">Automotive</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-products">
+                            <div class="card-body">
+                                <a href="../../../template/products/digital_twin/agriculture.html">
+                                    <p class="card-text text-white text-center">Agriculture 5D</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-products">
+                            <div class="card-body">
+                                <a href="../../../template/products/digital_twin/industry.html">
+                                    <p class="card-text text-white text-center">Industry 4.0</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-3 my-2">
+                    <div class="col-4">
+                        <div class="card card-products">
+                            <div class="card-body">
+                                <a href="../../../template/products/digital_twin/infrastructure.html">
+                                    <p class="card-text text-white text-center">Infrastructure</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-products">
+                            <div class="card-body">
+                                <a href="../../../template/products/digital_twin/works.html">
+                                    <p class="card-text text-white text-center">5G How it Works</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-products">
+                            <div class="card-body">
+                                <a href="../../../template/products/digital_twin/interactive_booths.html">
+                                    <p class="card-text text-white text-center">Interactive Booth</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-3">
+                    <div class="col-4">
+                        <div class="card border-0 card-products d-none">
+                            <div class="card-body">
+
+                                <p class="card-text text-white text-center"></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-products">
+                            <div class="card-body">
+                                <a href="../../../template/products/digital_twin/hydraulic.html">
+                                    <p class="card-text text-white text-center">Hydraulic</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card border-0 card-products d-none">
+                            <div class="card-body border-0">
+                                <p class="card-text text-white text-center"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="../../../template/products/hardware.html">
+                <p class="text-center nav_link font-weight-bold">HARDWARE</p>
+                </a>
+                <div class="row mx-3">
+                    <div class="col-6">
+                        <div class="card card-products1" id="slidetwobg">
+                            <div class="card-body">
+                                <a href="../../../template/products/hardware/magnetic_card.html">
+                                    <p class="card-text text-white text-center">NFC Magnetic Cards/RFID</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card card-products1" id="slidetwobg">
+                            <div class="card-body">
+                                <a href="../../../template/products/hardware/interactive_light.html">
+                                    <p class="card-text text-white text-center">Interactive Light Panel</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-3 mt-2">
+                    <div class="col-6">
+                        <div class="card card-products1" id="slidetwobg">
+                            <div class="card-body">
+                                <a href="../../../template/products/hardware/interactive_models.html">
+                                    <p class="card-text text-white text-center">Interactive Models</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card card-products1" id="slidetwobg">
+                            <div class="card-body">
+                                <a href="../../../template/products/hardware/holograms.html">
+                                    <p class="card-text text-white text-center">Holograms</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid collapse" id="services">
+        <div class="row my-5">
+            <div class="col-12 mb-3">
+                <a href="../../../template/services/services.html">
+                    <p class="text-center nav_link font-weight-bold">
+                        SERVICES</a>
+                    </p>
+                </a>
+            </div>
+            <div class="col-sm-2">
+                <div class="card cardheight" id="slidetwobg">
+                    <div class="card-body">
+                        <a href="../../../template/services/animation.html">
+                            <p class="card-text text-white text-center">Animations and
+                                Scenarios Creation</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card cardheight" id="slidetwobg">
+                    <div class="card-body">
+                        <a href="../../../template/services/3d_model.html">
+                            <p class="card-text text-white text-center" >3D Models Creation, CAD
+                                or 3D Scanning. Post-Processing</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card cardheight" id="slidetwobg">
+                    <div class="card-body">
+                        <a href="../../../template/services/content_creation.html">
+                            <p class="card-text text-white text-center" >Content Creation</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card cardheight" id="slidetwobg">
+                    <div class="card-body">
+                        <a href="../../../template/services/light_panels.html">
+                            <p class="card-text text-white text-center" >Interactive Light
+                                Panels Design and Production</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card cardheight" id="slidetwobg">
+                    <div class="card-body">
+                        <a href="../../../template/services/interactive_models.html">
+                            <p class="card-text text-white text-center" >Interactive Models
+                                Design and Production</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card cardheight" id="slidetwobg">
+                    <div class="card-body">
+                        <a href="../../../template/services/exhibition_booths.html">
+                            <p class="card-text text-white text-center" >Exhibition Booths /
+                                Digital Corners Planning and Implementation</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /header end -->
+
+
+    <div id="fullpage">
+
+        <div class="section active fp-auto-height-responsive" id="section0">
+            <!--First slide-->
+            <div class="carousel_item h-100 active" data-section-name="video">
+                <div class="container-fluid d-block m-auto" style="padding: 5em 1em;">
+                    <div class="row w-100 mx-auto" style="margin-top: 100px !important;">
+                        <div class="col-lg-6 col-md-6 col-xs-12">
+                            <div class="container">
+                                <!-- <span style="font-size:150px; opacity:0.1; color: #2f1b5d; font-weight: 1000">01</span> -->
+                                <p
+                                    style="font-size: 28px; color:#2f1b5d;  font-weight: 800;">
+                                    Animations
+                                </p>
+                                    <div class="text-left ">
+                                        <p id="sub-headers2">Animate and level up</p>
+                                        <p class="sub_text">
+                                            We create animations and visual effects applicable to a broad range of businesses,
+                                            from
+                                            technical to luxury, whether you have 3D data or we need to model and render it
+                                            accordingly. <br>
+                                            The resulting video contents can be seconds or minutes long, at full HD or 4K
+                                            resolutions,
+                                            acting as a visual narratives useful for training programs, marketing campaigns and
+                                            strategy or
+                                            customer experience transformations.
+                                        </p>
+                                    </div>
+                                    <div class=" mt-4">
+                                        <a href="../../../assets/pdf/DGT- Business Cards.pdf" download>
+                                        <button class="btn text-light mx-auto" type="button" id="btn-subheader1">
+                                            Download PDF
+                                        </button></a>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xs-12">
+                            <img src="../../../assets/images/animation and scenario creation.png" class="w-100 mb-3" height="240px" alt="">
+                            <div class="row">
+                                <div class="col-md-5 col-xs-12">
+                                    <img src="../../../assets/images/10 Animation jewelry.png" class="w-100 mx-2" alt="">
+                                </div>
+                                <div class="col-md-7 col-xs-12">
+                                    <img src="../../../assets/images/10-Animation.png" class="w-100" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/First slide -->
+        </div>
+        <div class="section fp-auto-height-responsive" id="section1">
+            <!-- <img src="../../../assets/images/slider_img/slider_img_1.jpg" class="w-100"> -->
+            <video autoplay id="myvid2" class="video w-100" poster="../../../assets/images/animation and scenario creation.png" controls>
+                <source src="../../../assets/images/DGT.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="section fp-auto-height-responsive" id="section2">
+            <div class="carousel_item d-flex">
+                <div class="wrapper" style="background-color: #2f1b5d; min-height: 100vh; padding: 6em 4px; position: static; top: 12%;" >
+                    <div class="animation-element slide-left testimonial">
+                        <h3 class="my-5 text-center text-white tracking-in-expand" id="sub-headers3" 
+                        style="font-family: opensansitalic; text-shadow: 2px 2px 4px #000000;">
+                        Animation Features
+                     </h3>
+                    </div>
+                    
+                    
+                    <!-- <h1 class="animate__animated animate__bounce">Animation Features
+                    </h1> -->
+                    <div class="container-fluid">
+                        <div class="row mt-5 p-0">
+                            <div class="col-lg-4 my-5 ">
+                                <div class="card px-2 border-0" style="background-color: #2f1b5d;" >
+                                    <div class="card-body">
+                                        <p class="card-title" style="color:#fff; font-weight: bold;text-transform: uppercase;">
+                                            User Friendly Presentation of Production Lines</p>
+                                        <p class="card-text text-light" >
+                                            Catch even the most subtle differences between same range products
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">01</span> -->
+                                
+                            </div>
+                            <div class="col-lg-4 my-5">
+                                <div class="card px-2 border-0" style="background-color: #2f1b5d;" >
+                                    <div class="card-body">
+                                        <p class="card-title" style="color:#fff; font-weight: bold;text-transform: uppercase;">
+                                            Customer Attraction </p>
+                                        <p class="card-text text-light" >
+                                            Fun discovery journeys, creation and design experiences, photos and videos capture of the products
+                                
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">02</span> -->
+                                
+                            </div>
+                            <div class="col-lg-4 my-5">
+                                <div class="card px-2 border-0" style="background-color: #2f1b5d;" >
+                                    <div class="card-body">
+                                        <p class="card-title" style="color:#fff; font-weight: bold;text-transform: uppercase;">
+                                            Processes Optimization and Strong Security </p>
+                                        <p class="card-text text-light" >
+                                            Minimized resources, high speed and efficiency, short time implementation, remote collaboration, training cost reduction, low cloud storage resources and traffic costs
+                                
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">03</span> -->
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Footer start -->
+        <div class="section fp-auto-height-responsive footer_section" id="section6" >
+            <div class="container-fluid"  id="slidetwobgright">
+                    <div class="row">
+                        <div class="col-12 mt-5 pt-3">
+                            <h1 class="font-weight-bold mb-4 text-white text-center" id="sub-headers">Who we are</h1>
+                        </div>
+                        <div class="col-12">
+                            <h4 class="text-light mb-3 text-center" style="font-family: opensansItalic;">We are a Romanian-Canadian team of experts in <br>
+                                gamiﬁcation, digitalization, graphics, UI-UX, animations, <br>
+                                digital equipment, production and optimization.
+                            </h4>
+                            <p class="text-light text-center" style="font-family: robotoRegular;">Do you have a project? Let us know!</p>                            
+                            <a href="../../../template/contact.html" class="">
+                                <button class="btn text-light d-block mx-auto mt-2" type="button" id="btn-subheader">
+                                    CONTACT US
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            <div class="container-fluid footer_wrapper">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="../../../assets/images/logo.svg" class="img-thumbnail" height="80" alt="">
+                        <ul class="footer-list1 mt-3">
+                            <li><a href="index.html"> HOME </a></li>
+                            <li><a href="../../../template/products/software.html"> PRODUCTS </a></li>
+                            <li><a href="../../../template/services/services.html"> SERVICES </a></li>
+                            <li><a href="../../../template/gallery.html"> GALLERY </a></li>
+                            <li><a href="../../../template/contact.html"> CONTACTS </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <p class="footer-header pb-2">PRODUCTS</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="footer-list2">
+                                    <a href="../../../template/products/software.html"> SOFTWARE </a><br>
+                                    <a href="../../../template/products/softwares/animations.html"> Animations </a><br>
+                                    <a href="../../../template/products/softwares/power_3d.html"> Power 3D </a><br>
+                                    <a href="../../../template/products/softwares/digital_twin.html" class="font-weight-bold "> Digital Twin </a><br>
+                                    <a href="../../../template/products/softwares/training_3d.html"> Training 3D </a><br>
+                                    <a href="../../../template/products/softwares/service_3d.html"> Services 3D </a><br>
+                                    <a href="../../../template/products/softwares/vr_ar.html"> VR/AR </a><br>
+                                    <a href="../../../template/products/softwares/virtual_tour.html"> Virtual Tour</a><br>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="footer-list2">
+                                    <a href="../../../template/products/hardware.html"> HARDWARE </a><br>
+                                    <a href="../../../template/products/hardware/magnetic_card.html"> NFC Magnetic Cards/RFID</a><br>
+                                    <a href="../../../template/products/hardware/interactive_light.html"> Interactive Light Panel</a><br>
+                                    <a href="../../../template/products/hardware/interactive_models.html"> Interactive Models</a><br>
+                                    <a href="../../../template/products/hardware/holograms.html"> Holograms</a><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <p class="footer-header pb-2">DIGITAL TWIN</p>
+                        <div class="footer-list2">
+                            <a href="../../../template/products/digital_twin/automotive.html"> Automotive  </a><br>
+                            <a href="../../../template/products/digital_twin/agriculture.html"> Agriculture 5G </a><br>
+                            <a href="../../../template/products/digital_twin//industry.html"> Industry 4.0  </a><br>
+                            <a href="../../../template/products/digital_twin/infrastructure.html"> Infrastructure  </a><br>
+                            <a href="../../../template/products/digital_twin/works.html"> 5G How it Works </a><br>
+                            <a href="../../../template/products/digital_twin/interactive_booths.html"> Interactive Booth </a><br>
+                            <a href="../../../template/products/digital_twin/hydraulic.html"> Hydraulic.</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="footer-header pb-2">SERVICES</p>
+                        <div class="footer-list2">
+                            <a href="../../../template/services/animation.html"> Animations and Scenarios Creation </a><br>
+                            <a href="../../../template/services/3d_model.html"> 3d Models Creation, CAD, 3D Scanning, Post-Processing </a><br>
+                            <a href="../../../template/services/content_creation.html"> Content Creation </a><br>
+                            <a href="../../../template/services/light_panels.html"> Interactive Light Panels Design and Production </a><br>
+                            <a href="../../../template/services/interactive_models.html"> Interactive Models Design and Production </a><br>
+                            <a href="../../../template/services/exhibition_booths.html"> Exhibition Booths / Digital Corners Planning and Implementation </a>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <p class="footer-header pb-2">CONTACTS</p>
+                        <div class="footer-list2">
+                            <a href="#">office@gamifyworld.com</a>
+                        </div>
+                        <div class="pt-2 row">
+                            <img src="../../assets/images/icons/facebook.svg" alt="" height="25px">
+                            <img src="../../assets/images/icons/whatsapp.svg" class="mx-2" alt="" height="25px">
+                            <img src="../../assets/images/icons/youtube.svg" alt="" height="25px">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="text-right" style="color: #2f2971;">EN &nbsp; FR &nbsp; RO &nbsp; </p>
+                        <div class="policy-footer">
+                            <div class="footer-list2">
+                                PRIVACY POLICY&nbsp;&nbsp;TERMS OF USE&nbsp;&nbsp;LEGAL&nbsp;&nbsp;CUSTOMER
+                                SUPPORT&nbsp;&nbsp;SITE MAP
+                            </div>
+                        </div>
+                        <div class=" footer-list2 copywrite-footer text-right">
+                            Digital Agency Software&reg; 2020 All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid footer_wrapper22">
+                <div class="row ">
+                    <div class="col-6">
+                        <img src="./assets/images/logo.svg" alt="" height="40px" class="pt-2">
+                    </div>
+                    <div class="col-6">
+                        <div class="pt-2 row ">
+                            <div style="position: absolute; right: 10%;">
+                                <img src="../../assets/images/icons/facebook.svg" alt="" height="25px">
+                                <img src="../../assets/images/icons/whatsapp.svg" class="mx-2" alt="" height="25px">
+                                <img src="../../assets/images/icons/youtube.svg" alt="" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-12 footer-list_mobile">
+                            <span class="p-1">PRIVACY POLICY</span>
+                            <span class="p-1">TERMS OF USE</span>
+                            <span class="p-1">LEGAL</span>
+                            <span class="p-1">CUSTOMER SUPPORT</span>
+                            <span class="p-1">DESKTOP VERSION</span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12 footer-list_mobile text-center">
+                        Digital Agency Software&reg; 2020 All rights reserved.
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!-- /footer end -->
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="../../../assets/js/fullpage.js"></script>
+    <!-- <script src="./assets/js/angular.min.js"></script> -->
+    <!-- <script src="./assets/js/angular-route.min.js"></script> -->
+    <script src="../../../assets/js/bootstrap.min.js"></script>
+    <!-- <script src="./assets/js/app.js"></script> -->
+    <!-- <script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script> -->
+    <script src="../../../assets/js/routes.js"></script>
+    <script src="../../../assets/js/main.js"></script>
+    <script src="../../../assets/js/script.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            // anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
+            // sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['Intro', 'What We Do?', 'Turn your ideas', 'Automotives', 'Memorable Story', 'Who we are'],
+            responsiveWidth: 900,
+            afterResponsive: function (isResponsive) {
+
+            }
+
+        });
+
+        // var $animation_elements = $('.animation-element');
+        // var $window = $(window);
+
+        // function check_if_in_view() {
+        // var window_height = $window.height();
+        // var window_top_position = $window.scrollTop();
+        // var window_bottom_position = (window_top_position + window_height);
+        
+        // $.each($animation_elements, function() {
+        //     var $element = $(this);
+        //     var element_height = $element.outerHeight();
+        //     var element_top_position = $element.offset().top;
+        //     var element_bottom_position = (element_top_position + element_height);
+        
+        //     //check to see if this current container is within viewport
+        //     if ((element_bottom_position >= window_top_position) &&
+        //         (element_top_position <= window_bottom_position)) {
+        //     $element.addClass('in-view');
+        //     } else {
+        //     $element.removeClass('in-view');
+        //     }
+        // });
+        // }
+
+        // $window.on('scroll resize', check_if_in_view);
+        // $window.trigger('scroll');
+    </script>
+</body>
+
+</html>
