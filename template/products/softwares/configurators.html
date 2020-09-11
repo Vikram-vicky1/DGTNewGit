@@ -18,49 +18,121 @@
 <body ng-controller="bodyController" class='h-100'>
     <!-- Header start-->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-        <a class="navbar-brand" href="/"><img src="../../assets/images/logo.svg" height="60" alt=""></a>
+        <a class="navbar-brand" href="/"><img src="../../../assets/images/logo.svg" height="60" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line"></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav text-center w-100">
-                <li class="nav-item mx-auto active">
+            <div class="offcanvas-header mt-3">  
+                <button class="btn btn-outline-light btn-close float-right fas"> &times; </button>
+                <a class="navbar-brand" href="/"><img src="../../../assets/images/logo-sm.png" height="40" alt=""></a>
+            </div>
+            <ul class="navbar-nav text-center mobile_nav" style="width: 120px">
+                <li class="nav-item mx-lg-auto active d-lg-block d-none">
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item mx-auto dropdown">
-                    <a class="nav-link dropdown-toggle productsList" href="#products1" data-toggle="dropdown"
-                        data-target="" aria-expanded="false" aria-controls="productsList" id="productsList" style="text-decoration: underline;">
-                        Products
-                    </a>
-
+                <li class="nav-item mx-lg-auto dropdown d-lg-block d-none">
+                    <a class="nav-link dropdown-toggle productsList" href="#products1"  data-toggle="dropdown" data-target=""
+                        aria-expanded="false" aria-controls="productsList" id="productsList"><u>Products</u> </a>
                 </li>
-                <li class="nav-item mx-auto dropdown">
+                <li class="nav-item mx-auto dropdown d-lg-block d-none">
                     <a class="nav-link dropdown-toggle" href="#services" data-toggle="dropdown" data-target=""
                         aria-expanded="false" aria-controls="serviceListList" id="serviceListList">Services</a>
-
-                </li>
-                <li class="nav-item mx-auto">
+                </li>                    
+                <li class="nav-item mx-auto d-lg-block d-none">
                     <a class="nav-link" href="../../../template/gallery.html">Gallery</a>
                 </li>
-                <li class="nav-item mx-auto">
+                <li class="nav-item mx-auto d-lg-block d-none">
                     <a class="nav-link" href="../../../template/contact.html">Contact</a>
                 </li>
-
+                    <li class="d-lg-none d-block text-left">
+                        <a class="nav-link text-uppercase" href="/">Home  <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="d-lg-none d-block text-left" >
+                    <a href="#" data-toggle="collapse" data-target="#toggleDemo"  class="collapsed nav-link dropdown-toggle"
+                    style="margin-top: 20%; text-transform: uppercase; ">Products
+                    </a>
+                    <ul class="collapse" id="toggleDemo" style="list-style: none; margin-top: -6%; margin-left: -33%;">
+                        <li>
+                            <a href="../../../template/products/software.html" class="text-white dropdown-toggle collapsed" data-toggle="collapse" data-target="#togglechild1">
+                            <span class="font-weight-bold text-white"> Software </span></a>
+                                <ul class="collapse text-left" id="togglechild1" style="list-style: none;">
+                                    <li><a href="../../../template/products/softwares/animations.html" class="text-white">Animations</a></li>
+                                    <li><a href="../../../template/products/softwares/power_3d.html" class="text-white ">Power 3D</a></li>
+                                    <li><a href="../../../template/products/softwares/digital_twin.html" class="text-white ">Digital Twin</a></li>
+                                    <li><a href="../../../template/products/softwares/training_3d.html" class="text-white ">Training 3D</a></li>
+                                    <li><a href="../../../template/products/softwares/service_3d.html" class="text-white ">Services 3D</a></li>
+                                    <li><a href="../../../template/products/softwares/vr_ar.html" class="text-white ">VR/AR</a></li>
+                                    <li><a href="../../../template/products/softwares/configurators.html" class="text-white ">Configurators</a></li>
+                                    <li><a href="../../../template/products/softwares/virtual_tour.html" class="text-white ">Virtual Tour</a></li>
+                                </ul>
+                        </li>
+                        <li><a href="#" class="text-white dropdown-toggle" data-toggle="collapse" data-target="#togglechild2">
+                           <span class="font-weight-bold text-white">Digital Twin</span> </a>
+                            <ul class="collapse text-left" id="togglechild2" style="list-style: none;">
+                                <li><a href="../../../template/products/digital_twin/automotive.html" class="text-white pl-2">Automotive</a></li>
+                                <li><a href="../../../template/products/digital_twin/agriculture.html" class="text-white pl-2">Agriculture 5G</a></li>
+                                <li><a href="../../../template/products/digital_twin/industry.html" class="text-white pl-2">Industry 4.0</a></li>
+                                <li><a href="../../../template/products/digital_twin/infrastructure.html" class="text-white pl-2">Infrastructure</a></li>
+                                <li><a href="../../../template/products/digital_twin/works.html" class="text-white pl-2">5G</a></li>
+                                <li><a href="../../../template/products/digital_twin/interactive_booths.html" class="text-white pl-2">Interactive Booth</a></li>
+                                <li><a href="../../../template/products/digital_twin/hydraulic.html" class="text-white pl-2">Hydraulic</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"  class="text-white dropdown-toggle collapsed" data-toggle="collapse" data-target="#togglechild3">
+                            <span class="font-weight-bold text-white">Hardware</span></a>
+                            <ul class="collapse text-left" id="togglechild3" style="list-style: none;">
+                                <li><a href="../../../template/products/hardware/magnetic_card.html" class="text-white">NFC/RFID</a></li>
+                                <li><a href="../../../template/products/hardware/interactive_light.html" class="text-white">Light Panel</a></li>
+                                <li><a href="../../../template/products/hardware/interactive_models.html" class="text-white">Int. Models</a></li>
+                                <li><a href="../../../template/products/hardware/holograms.html" class="text-white">Holograms</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="d-lg-none d-block text-left" >
+                    <a href="#" data-toggle="collapse" data-target="#toggleDemo1"  class="collapsed nav-link dropdown-toggle"
+                    style="margin-top: 20%; text-transform: uppercase;">
+                    </span class="font-weight-bold text-white mr-2"> Services </span>
+                    </a>
+                    <ul class="collapse text-left" id="toggleDemo1" style="list-style: none; margin-top: -6%; margin-left: -35%;">
+                        <li><a href="../../../template/services/animation.html" class="text-white">Animations and Scenarios Creation</a></li>
+                        <li><a href="../../../template/services/3d_model.html" class="text-white">3D Model Creation</a></li>
+                        <li><a href="../../../template/services/content_creation.html" class="text-white">Content Creation</a></li>
+                        <li><a href="../../../template/services/light_panels.html" class="text-white">Interactive Light Panels</a></li>
+                        <li><a href="../../../template/services/interactive_models.html" class="text-white">Interactive Models</a></li>
+                        <li><a href="../../../template/services/exhibition_booths.html" class="text-white">Exb Booths/ Digital Corners</a></li>
+                    </ul>
+                    </li>
+                    <li class="d-lg-none d-block text-left">
+                        <a class="nav-link text-uppercase" href="../../../template/gallery.html">Gallery</a>
+                    </li>
+                    <li class="d-lg-none d-block text-left">
+                        <a class="nav-link text-uppercase" href="../../../template/contact.html">Contact</a>
+                    </li>
+                    <li class="d-lg-none d-block text-left">
+                        <a class="nav-link text-uppercase" >Search</a>
+                    </li>
+                    <li class="d-lg-none d-block text-left">
+                        <a class="nav-link text-uppercase" >language</a>
+                    </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline mx-lg-auto my-2 my-lg-0 d-lg-block d-none">
                 <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
             </form>
         </div>
     </nav>
 
-    <div class="container-fluid collapse" id="products1">
+    <div class="container-fluid collapse offcanvas-header1" id="products1">
         <div class="row w-100 mb-4">
-            <div class="col-md-4">
-
+            <div class="col-md-4 my-1">
                 <a href="../../../template/products/software.html">
-                    <p class="text-center nav_link font-weight-bold">
+                    <p class="text-center nav_link text_color font-weight-bold">
                         SOFTWARE
                     </p>
                 </a>
@@ -94,7 +166,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mx-3">
+                <div class="row mx-3 my-2">
                     <div class="col-4">
                         <div class="card card-products">
                             <div class="card-body">
@@ -124,10 +196,19 @@
                     </div>
                 </div>
                 <div class="row mx-3">
-                    <div class="col-4">
+                    <div class="col-2">
                         <div class="card border-0 card-products d-none">
                             <div class="card-body">
                                 <p class="card-text text-white text-center"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-products">
+                            <div class="card-body">
+                                <a href="../../../template/products/softwares/configurators.html">
+                                    <p class="card-text text-white text-center">Configurators</p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -140,7 +221,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-2">
                         <div class="card border-0 card-products d-none">
                             <div class="card-body border-0">
                                 <p class="card-text text-white text-center"></p>
@@ -151,8 +232,11 @@
             </div>
             <div class="col-md-4" id="borderstyle">
                 <a href="../../../template/products/digitaltwin.html">
-                    <p class="text-center nav_link font-weight-bold">Digital Twin</p>
+                <p class="text-center text_color   nav_link font-weight-bold">
+                    DIGITAL TWIN
+                </p>
                 </a>
+
                 <div class="row mx-3">
                     <div class="col-4">
                         <div class="card card-products">
@@ -239,22 +323,24 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 my-1">
                 <a href="../../../template/products/hardware.html">
-                <p class="text-center nav_link font-weight-bold">HARDWARE</p>
-                </a>
+                <p class="text-center nav_link text_color font-weight-bold">
+               HARDWARE </p> </a>
                 <div class="row mx-3">
-                    <div class="col-6">
-                        <div class="card card-products1" id="slidetwobg">
+                    <div class="col-4">
+                        <div class="card card-products">
                             <div class="card-body">
-                                <a href="../../../template/products/hardware/magnetic_card.html">
-                                    <p class="card-text text-white text-center">NFC Magnetic Cards/RFID</p>
-                                </a>
+                                <div class="card-body">
+                                    <a href="../../../template/products/hardware/magnetic_card.html">
+                                        <p class="card-text text-white text-center">NFC Magnetic Cards/RFID</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="card card-products1" id="slidetwobg">
+                    <div class="col-4">
+                        <div class="card card-products">
                             <div class="card-body">
                                 <a href="../../../template/products/hardware/interactive_light.html">
                                     <p class="card-text text-white text-center">Interactive Light Panel</p>
@@ -262,10 +348,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row mx-3 mt-2">
-                    <div class="col-6">
-                        <div class="card card-products1" id="slidetwobg">
+                    <div class="col-4">
+                        <div class="card card-products">
                             <div class="card-body">
                                 <a href="../../../template/products/hardware/interactive_models.html">
                                     <p class="card-text text-white text-center">Interactive Models</p>
@@ -273,12 +357,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="card card-products1" id="slidetwobg">
+                </div>
+                <div class="row mx-3  my-2">
+                    <div class="col-4">
+                        <div class="card border-0 card-products d-none">
+                            <div class="card-body">
+
+                                <p class="card-text text-white text-center"></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-products">
                             <div class="card-body">
                                 <a href="../../../template/products/hardware/holograms.html">
                                     <p class="card-text text-white text-center">Holograms</p>
                                 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card border-0 card-products d-none">
+                            <div class="card-body border-0">
+                                <p class="card-text text-white text-center"></p>
                             </div>
                         </div>
                     </div>
@@ -287,12 +389,12 @@
         </div>
     </div>
 
-    <div class="container-fluid collapse" id="services">
+    <div class="container-fluid collapse offcanvas-header2" id="services">
         <div class="row my-5">
             <div class="col-12 mb-3">
                 <a href="../../../template/services/services.html">
-                    <p class="text-center nav_link font-weight-bold">
-                        SERVICES</a>
+                    <p class="text-center text_color  nav_link font-weight-bold">
+                        SERVICES
                     </p>
                 </a>
             </div>
@@ -310,7 +412,7 @@
                 <div class="card cardheight" id="slidetwobg">
                     <div class="card-body">
                         <a href="../../../template/services/3d_model.html">
-                            <p class="card-text text-white text-center" >3D Models Creation, CAD
+                            <p class="card-text text-white text-center">3D Models Creation, CAD
                                 or 3D Scanning. Post-Processing</p>
                         </a>
                     </div>
@@ -320,7 +422,7 @@
                 <div class="card cardheight" id="slidetwobg">
                     <div class="card-body">
                         <a href="../../../template/services/content_creation.html">
-                            <p class="card-text text-white text-center" >Content Creation</p>
+                            <p class="card-text text-white text-center">Content Creation</p>
                         </a>
                     </div>
                 </div>
@@ -329,7 +431,7 @@
                 <div class="card cardheight" id="slidetwobg">
                     <div class="card-body">
                         <a href="../../../template/services/light_panels.html">
-                            <p class="card-text text-white text-center" >Interactive Light
+                            <p class="card-text text-white text-center">Interactive Light
                                 Panels Design and Production</p>
                         </a>
                     </div>
@@ -339,7 +441,7 @@
                 <div class="card cardheight" id="slidetwobg">
                     <div class="card-body">
                         <a href="../../../template/services/interactive_models.html">
-                            <p class="card-text text-white text-center" >Interactive Models
+                            <p class="card-text text-white text-center">Interactive Models
                                 Design and Production</p>
                         </a>
                     </div>
@@ -349,7 +451,7 @@
                 <div class="card cardheight" id="slidetwobg">
                     <div class="card-body">
                         <a href="../../../template/services/exhibition_booths.html">
-                            <p class="card-text text-white text-center" >Exhibition Booths /
+                            <p class="card-text text-white text-center">Exhibition Booths /
                                 Digital Corners Planning and Implementation</p>
                         </a>
                     </div>
@@ -372,21 +474,22 @@
                                 <!-- <span style="font-size:150px; opacity:0.1; color: #2f1b5d; font-weight: 1000">01</span> -->
                                 <p
                                     style="font-size: 28px; color:#2f1b5d;  font-weight: 800;">
-                                    Animations
+                                    Configurators
                                 </p>
                                     <div class="text-left ">
-                                        <p id="sub-headers2">Animate and level up</p>
+                                        <p id="sub-headers2">Adapt, innovate, explore</p>
                                         <p class="sub_text">
-                                            We create animations and visual effects applicable to a broad range of businesses,
-                                            from
-                                            technical to luxury, whether you have 3D data or we need to model and render it
-                                            accordingly. <br>
-                                            The resulting video contents can be seconds or minutes long, at full HD or 4K
-                                            resolutions,
-                                            acting as a visual narratives useful for training programs, marketing campaigns and
-                                            strategy or
-                                            customer experience transformations.
+                                            As a digital agency, we provide a wide range of solutions to recreate various 
+                                            activities and events as virtual tours:
                                         </p>
+                                        <ul style="color:#2f1b5d; margin-left: -4%;">
+                                            <li>exhibition booth</li>
+                                            <li>visiting a museum </li>
+                                            <li>shopping in a mall</li>
+                                            <li>sightseeing popular places</li>
+                                            <li>attending a career fair or a networking event</li>
+                                            <li>hosting a trade show</li>
+                                        </ul>
                                     </div>
                                     <div class=" mt-4">
                                         <a href="../../../assets/pdf/DGT- Business Cards.pdf" download>
@@ -397,13 +500,13 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-xs-12">
-                            <img src="../../../assets/images/animation and scenario creation.png" class="w-100 mb-3" height="240px" alt="">
+                            <img src="../../../assets/images/slider_img/slider_img_1.jpg" class="w-100 mb-3" height="240px" alt="">
                             <div class="row">
                                 <div class="col-md-5 col-xs-12">
-                                    <img src="../../../assets/images/10 Animation jewelry.png" class="w-100 mx-2" alt="">
+                                    <img src="../../../assets/images/slider_img/slider_img_1.jpg" class="w-100 mx-2" alt="">
                                 </div>
                                 <div class="col-md-7 col-xs-12">
-                                    <img src="../../../assets/images/10-Animation.png" class="w-100" alt="">
+                                    <img src="../../../assets/images/slider_img/slider_img_1.jpg" class="w-100" alt="">
                                 </div>
                             </div>
                         </div>
@@ -414,69 +517,73 @@
         </div>
         <div class="section fp-auto-height-responsive" id="section1">
             <!-- <img src="../../../assets/images/slider_img/slider_img_1.jpg" class="w-100"> -->
-            <video autoplay id="myvid2" class="video w-100" poster="../../../assets/images/animation and scenario creation.png" controls>
+            <video id="myvid2" class="video w-100" poster="../../../assets/images/slider_img/slider_img_1.jpg" controls>
                 <source src="../../../assets/images/DGT.mp4" type="video/mp4">
             </video>
         </div>
         <div class="section fp-auto-height-responsive" id="section2">
             <div class="carousel_item d-flex">
-                <div class="wrapper" style="background-color: #2f1b5d; min-height: 100vh; padding: 6em 4px; position: static; top: 12%;" >
-                    <div class="animation-element slide-left testimonial">
-                        <h3 class="my-5 text-center text-white tracking-in-expand" id="sub-headers3" 
-                        style="font-family: opensansitalic; text-shadow: 2px 2px 4px #000000;">
-                        Animation Features
-                     </h3>
-                    </div>
-                    
-                    
-                    <!-- <h1 class="animate__animated animate__bounce">Animation Features
-                    </h1> -->
-                    <div class="container-fluid">
-                        <div class="row mt-5 p-0">
-                            <div class="col-lg-4 my-5 ">
-                                <div class="card px-2 border-0" style="background-color: #2f1b5d;" >
-                                    <div class="card-body">
-                                        <p class="card-title" style="color:#fff; font-weight: bold;text-transform: uppercase;">
-                                            User Friendly Presentation of Production Lines</p>
-                                        <p class="card-text text-light" >
-                                            Catch even the most subtle differences between same range products
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">01</span> -->
-                                
-                            </div>
-                            <div class="col-lg-4 my-5">
-                                <div class="card px-2 border-0" style="background-color: #2f1b5d;" >
-                                    <div class="card-body">
-                                        <p class="card-title" style="color:#fff; font-weight: bold;text-transform: uppercase;">
-                                            Customer Attraction </p>
-                                        <p class="card-text text-light" >
-                                            Fun discovery journeys, creation and design experiences, photos and videos capture of the products
-                                
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">02</span> -->
-                                
-                            </div>
-                            <div class="col-lg-4 my-5">
-                                <div class="card px-2 border-0" style="background-color: #2f1b5d;" >
-                                    <div class="card-body">
-                                        <p class="card-title" style="color:#fff; font-weight: bold;text-transform: uppercase;">
-                                            Processes Optimization and Strong Security </p>
-                                        <p class="card-text text-light" >
-                                            Minimized resources, high speed and efficiency, short time implementation, remote collaboration, training cost reduction, low cloud storage resources and traffic costs
-                                
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">03</span> -->
-                                
-                            </div>
+                <div class="wrapper" id="features_section">
+                    <h3 class="mb-4 text-center text-white" id="sub-headers3" style="font-family: opensansitalic">
+                        Configurators Features</h3>
+                    <div class="row m-1 p-0">
+                        <div class="col-lg-4 col-md-6 my-5">
+                            <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">01</span> -->
+                            <p
+                                style="color:#fff; font-weight: bold;text-transform: uppercase;">
+                                OVERALL ‘HOW IT WORKS’ EXPERIENCES</p>
+        
+                            <p style=" color:#fff;">
+                                Guided by 3D views, 3D product explosion effects, real time simulation, holograms and best suited media and digital equipment
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 my-5">
+                            <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">02</span> -->
+                            <p
+                                style="color:#fff; font-weight: bold;text-transform: uppercase;">
+                                DESKTOP AND MOBILE BROWSING</p>
+                            <p style=" color:#fff;">
+                                WebGL based, PC and mobile phones (Android and iOS) applicable. Online functionality, highly secured site, traceability logistics, proper access rights granting
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 my-5">
+                            <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">03</span> -->
+                            <p
+                                style="color:#fff; font-weight: bold;text-transform: uppercase;">
+                                CUSTOMER ATTRACTION</p>
+                            <p style="color:#fff; ">
+                                Fun discovery journeys, creation and design experiences, photos and videos capture of the products, directly from the application
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-5">
+                            <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">05</span> -->
+                            <p style="color:#fff; font-weight: bold;text-transform: uppercase;">
+                                PROCESSES OPTIMIZATION AND STRONG SECURITY</p>
+                            <p style=" color:#fff;">
+                                Minimized resources, high speed and efficiency, short time implementation, remote collaboration, training cost reduction, low cloud storage resources and traffic costs
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 my-5">
+                            <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">04</span> -->
+                            <p
+                                style="color:#fff; font-weight: bold;text-transform: uppercase;">
+                               CUSTOMER experience reshaping</p>
+        
+                            <p style=" color:#fff;">
+                                Flexible interaction tools, wide variety of formats and protocols
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mt-5">
+                            <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">06</span> -->
+                            <p
+                                style="color:#fff; font-weight: bold;text-transform: uppercase;">
+                                Enterprise Ready</p>
+                            <p style="color:#fff; ">
+                                ERP integration platform and service, cloud enabled accounts setting, bi-directionally data sharing with other critical enterprise applications
+    
+                            </p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -525,6 +632,7 @@
                                     <a href="../../../template/products/softwares/training_3d.html"> Training 3D </a><br>
                                     <a href="../../../template/products/softwares/service_3d.html"> Services 3D </a><br>
                                     <a href="../../../template/products/softwares/vr_ar.html"> VR/AR </a><br>
+                                    <a href="../../../template/products/softwares/configurators.html"> Configurators </a><br>
                                     <a href="../../../template/products/softwares/virtual_tour.html"> Virtual Tour</a><br>
                                 </div>
                             </div>

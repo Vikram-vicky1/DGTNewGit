@@ -16,54 +16,130 @@
 <body ng-controller="bodyController" class='h-100'>
     <!-- Header start-->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-        <a class="navbar-brand" href="/"><img src="../../assets/images/logo.svg" height="60" alt=""></a>
+        <a class="navbar-brand" href="/"><img src="../../../assets/images/logo.svg" height="60" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="line"></span> 
+            <span class="line"></span> 
+            <span class="line"></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav text-center w-100">
-                <li class="nav-item mx-auto active">
+            <div class="offcanvas-header mt-3">  
+                <button class="btn btn-outline-light btn-close float-right fas"> &times; </button>
+                <a class="navbar-brand" href="/"><img src="../../../assets/images/logo-sm.png" height="40" alt=""></a>
+            </div>
+            <ul class="navbar-nav text-center mobile_nav" style="width: 120px">
+                <li class="nav-item mx-lg-auto active d-lg-block d-none">
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item mx-auto dropdown">
-                    <a class="nav-link dropdown-toggle productsList" href="#products1" data-toggle="dropdown" style="text-decoration: underline;"
-                        data-target="" aria-expanded="false" aria-controls="productsList" id="productsList">Products</a>
-
+                <li class="nav-item mx-lg-auto dropdown d-lg-block d-none">
+                    <a class="nav-link dropdown-toggle productsList" href="#products1"  data-toggle="dropdown" data-target=""
+                        aria-expanded="false" aria-controls="productsList" id="productsList"><u>Products</u> </a>
                 </li>
-                <li class="nav-item mx-auto dropdown">
+                <li class="nav-item mx-auto dropdown d-lg-block d-none">
                     <a class="nav-link dropdown-toggle" href="#services" data-toggle="dropdown" data-target=""
                         aria-expanded="false" aria-controls="serviceListList" id="serviceListList">Services</a>
-
+                </li>                    
+                <li class="nav-item mx-auto d-lg-block d-none">
+                    <a class="nav-link" href="../../../template/gallery.html">Gallery</a>
                 </li>
-                <li class="nav-item mx-auto">
-                    <a class="nav-link" href="../template/gallery.html">Gallery</a>
+                <li class="nav-item mx-auto d-lg-block d-none">
+                    <a class="nav-link" href="../../../template/contact.html">Contact</a>
                 </li>
-                <li class="nav-item mx-auto">
-                    <a class="nav-link" href="../template/contact.html">Contact</a>
-                </li>
-
+                    <li class="d-lg-none d-block text-left">
+                        <a class="nav-link text-uppercase" href="/">Home  <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="d-lg-none d-block text-left" >
+                    <a href="#" data-toggle="collapse" data-target="#toggleDemo"  class="collapsed nav-link dropdown-toggle"
+                    style="margin-top: 20%; text-transform: uppercase; ">Products
+                    </a>
+                    <ul class="collapse" id="toggleDemo" style="list-style: none; margin-top: -6%; margin-left: -33%;">
+                        <li>
+                            <a href="../../../template/products/software.html" class="text-white dropdown-toggle collapsed" data-toggle="collapse" data-target="#togglechild1">
+                            <span class="font-weight-bold text-white"> Software </span></a>
+                                <ul class="collapse text-left" id="togglechild1" style="list-style: none;">
+                                    <li><a href="../../../template/products/softwares/animations.html" class="text-white">Animations</a></li>
+                                    <li><a href="../../../template/products/softwares/power_3d.html" class="text-white ">Power 3D</a></li>
+                                    <li><a href="../../../template/products/softwares/digital_twin.html" class="text-white ">Digital Twin</a></li>
+                                    <li><a href="../../../template/products/softwares/training_3d.html" class="text-white ">Training 3D</a></li>
+                                    <li><a href="../../../template/products/softwares/service_3d.html" class="text-white ">Services 3D</a></li>
+                                    <li><a href="../../../template/products/softwares/vr_ar.html" class="text-white ">VR/AR</a></li>
+                                    <li><a href="../../../template/products/softwares/configurators.html" class="text-white ">Configurators</a></li>
+                                    <li><a href="../../../template/products/softwares/virtual_tour.html" class="text-white ">Virtual Tour</a></li>
+                                </ul>
+                        </li>
+                        <li><a href="#" class="text-white dropdown-toggle" data-toggle="collapse" data-target="#togglechild2">
+                           <span class="font-weight-bold text-white">Digital Twin</span> </a>
+                            <ul class="collapse text-left" id="togglechild2" style="list-style: none;">
+                                <li><a href="../../../template/products/digital_twin/automotive.html" class="text-white pl-2">Automotive</a></li>
+                                <li><a href="../../../template/products/digital_twin/agriculture.html" class="text-white pl-2">Agriculture 5G</a></li>
+                                <li><a href="../../../template/products/digital_twin/industry.html" class="text-white pl-2">Industry 4.0</a></li>
+                                <li><a href="../../../template/products/digital_twin/infrastructure.html" class="text-white pl-2">Infrastructure</a></li>
+                                <li><a href="../../../template/products/digital_twin/works.html" class="text-white pl-2">5G</a></li>
+                                <li><a href="../../../template/products/digital_twin/interactive_booths.html" class="text-white pl-2">Interactive Booth</a></li>
+                                <li><a href="../../../template/products/digital_twin/hydraulic.html" class="text-white pl-2">Hydraulic</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"  class="text-white dropdown-toggle collapsed" data-toggle="collapse" data-target="#togglechild3">
+                            <span class="font-weight-bold text-white">Hardware</span></a>
+                            <ul class="collapse text-left" id="togglechild3" style="list-style: none;">
+                                <li><a href="../../../template/products/hardware/magnetic_card.html" class="text-white">NFC/RFID</a></li>
+                                <li><a href="../../../template/products/hardware/interactive_light.html" class="text-white">Light Panel</a></li>
+                                <li><a href="../../../template/products/hardware/interactive_models.html" class="text-white">Int. Models</a></li>
+                                <li><a href="../../../template/products/hardware/holograms.html" class="text-white">Holograms</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="d-lg-none d-block text-left" >
+                    <a href="#" data-toggle="collapse" data-target="#toggleDemo1"  class="collapsed nav-link dropdown-toggle"
+                    style="margin-top: 20%; text-transform: uppercase;">
+                    </span class="font-weight-bold text-white mr-2"> Services </span>
+                    </a>
+                    <ul class="collapse text-left" id="toggleDemo1" style="list-style: none; margin-top: -6%; margin-left: -35%;">
+                        <li><a href="../../../template/services/animation.html" class="text-white">Animations and Scenarios Creation</a></li>
+                        <li><a href="../../../template/services/3d_model.html" class="text-white">3D Model Creation</a></li>
+                        <li><a href="../../../template/services/content_creation.html" class="text-white">Content Creation</a></li>
+                        <li><a href="../../../template/services/light_panels.html" class="text-white">Interactive Light Panels</a></li>
+                        <li><a href="../../../template/services/interactive_models.html" class="text-white">Interactive Models</a></li>
+                        <li><a href="../../../template/services/exhibition_booths.html" class="text-white">Exb Booths/ Digital Corners</a></li>
+                    </ul>
+                    </li>
+                    <li class="d-lg-none d-block text-left">
+                        <a class="nav-link text-uppercase" href="../../../template/gallery.html">Gallery</a>
+                    </li>
+                    <li class="d-lg-none d-block text-left">
+                        <a class="nav-link text-uppercase" href="../../../template/contact.html">Contact</a>
+                    </li>
+                    <li class="d-lg-none d-block text-left">
+                        <a class="nav-link text-uppercase" >Search</a>
+                    </li>
+                    <li class="d-lg-none d-block text-left">
+                        <a class="nav-link text-uppercase" >language</a>
+                    </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline mx-lg-auto my-2 my-lg-0 d-lg-block d-none">
                 <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
             </form>
         </div>
     </nav>
 
-    <div class="container-fluid collapse" id="products1">
+    <div class="container-fluid collapse offcanvas-header1" id="products1">
         <div class="row w-100 mb-4">
-            <div class="col-md-4">
-                <a href="../../template/products/software.html">
-                <p class="text-center nav_link font-weight-bold">
-                     SOFTWARE
-                </p></a>
+            <div class="col-md-4 my-1">
+                <a href="../../../template/products/software.html">
+                    <p class="text-center nav_link text_color font-weight-bold">
+                        SOFTWARE
+                    </p>
+                </a>
 
                 <div class="row mx-3">
                     <div class="col-4">
                         <div class="card card-products">
                             <div class="card-body">
-                                <a href="../template/products/softwares/animations.html">
+                                <a href="../../../template/products/softwares/animations.html">
                                     <p class="card-text text-white text-center">Animations</p>
                                 </a>
                             </div>
@@ -72,7 +148,7 @@
                     <div class="col-4">
                         <div class="card card-products">
                             <div class="card-body">
-                                <a href="../template/products/softwares/power_3d.html">
+                                <a href="../../../template/products/softwares/power_3d.html">
                                     <p class="card-text text-white text-center">Power 3D</p>
                                 </a>
                             </div>
@@ -81,7 +157,7 @@
                     <div class="col-4">
                         <div class="card card-products">
                             <div class="card-body">
-                                <a href="../template/products/softwares/digital_twin.html">
+                                <a href="../../../template/products/softwares/digital_twin.html">
                                     <p class="card-text text-white text-center">DIGITAL TWIN</p>
                                 </a>
                             </div>
@@ -92,7 +168,7 @@
                     <div class="col-4">
                         <div class="card card-products">
                             <div class="card-body">
-                                <a href="../template/products/softwares/training_3d.html">
+                                <a href="../../../template/products/softwares/training_3d.html">
                                     <p class="card-text text-white text-center">Training 3D</p>
                                 </a>
                             </div>
@@ -101,7 +177,7 @@
                     <div class="col-4">
                         <div class="card card-products">
                             <div class="card-body">
-                                <a href="../template/products/softwares/service_3d.html">
+                                <a href="../../../template/products/softwares/service_3d.html">
                                     <p class="card-text text-white text-center">Services 3D</p>
                                 </a>
                             </div>
@@ -110,7 +186,7 @@
                     <div class="col-4">
                         <div class="card card-products">
                             <div class="card-body">
-                                <a href="../template/products/softwares/vr_ar.html">
+                                <a href="../../../template/products/softwares/vr_ar.html">
                                     <p class="card-text text-white text-center">VR/AR</p>
                                 </a>
                             </div>
@@ -118,7 +194,7 @@
                     </div>
                 </div>
                 <div class="row mx-3">
-                    <div class="col-4">
+                    <div class="col-2">
                         <div class="card border-0 card-products d-none">
                             <div class="card-body">
                                 <p class="card-text text-white text-center"></p>
@@ -128,13 +204,22 @@
                     <div class="col-4">
                         <div class="card card-products">
                             <div class="card-body">
-                                <a href="../template/products/softwares/virtual_tour.html">
-                                    <p class="card-text text-white text-center">Virtual Tour</p>
+                                <a href="../../../template/products/softwares/configurators.html">
+                                    <p class="card-text text-white text-center">Configurators</p>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
+                        <div class="card card-products">
+                            <div class="card-body">
+                                <a href="../../../template/products/softwares/virtual_tour.html">
+                                    <p class="card-text text-white text-center">Virtual Tour</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
                         <div class="card border-0 card-products d-none">
                             <div class="card-body border-0">
                                 <p class="card-text text-white text-center"></p>
@@ -144,16 +229,17 @@
                 </div>
             </div>
             <div class="col-md-4" id="borderstyle">
-
-                <a href="../../template/products/digitaltwin.html">
-                    <p class="text-center nav_link font-weight-bold">Digital Twin</p>
+                <a href="../../../template/products/digitaltwin.html">
+                <p class="text-center text_color   nav_link font-weight-bold">
+                    DIGITAL TWIN
+                </p>
                 </a>
 
                 <div class="row mx-3">
                     <div class="col-4">
                         <div class="card card-products">
                             <div class="card-body">
-                                <a href="../template/products/digital_twin/automotive.html">
+                                <a href="../../../template/products/digital_twin/automotive.html">
                                     <p class="card-text text-white text-center">Automotive</p>
                                 </a>
                             </div>
@@ -162,7 +248,7 @@
                     <div class="col-4">
                         <div class="card card-products">
                             <div class="card-body">
-                                <a href="../template/products/digital_twin/agriculture.html">
+                                <a href="../../../template/products/digital_twin/agriculture.html">
                                     <p class="card-text text-white text-center">Agriculture 5D</p>
                                 </a>
                             </div>
@@ -171,7 +257,7 @@
                     <div class="col-4">
                         <div class="card card-products">
                             <div class="card-body">
-                                <a href="../template/products/digital_twin/industry.html">
+                                <a href="../../../template/products/digital_twin/industry.html">
                                     <p class="card-text text-white text-center">Industry 4.0</p>
                                 </a>
                             </div>
@@ -182,7 +268,7 @@
                     <div class="col-4">
                         <div class="card card-products">
                             <div class="card-body">
-                                <a href="../template/products/digital_twin/infrastructure.html">
+                                <a href="../../../template/products/digital_twin/infrastructure.html">
                                     <p class="card-text text-white text-center">Infrastructure</p>
                                 </a>
                             </div>
@@ -191,7 +277,7 @@
                     <div class="col-4">
                         <div class="card card-products">
                             <div class="card-body">
-                                <a href="../template/products/digital_twin/works.html">
+                                <a href="../../../template/products/digital_twin/works.html">
                                     <p class="card-text text-white text-center">5G How it Works</p>
                                 </a>
                             </div>
@@ -200,7 +286,7 @@
                     <div class="col-4">
                         <div class="card card-products">
                             <div class="card-body">
-                                <a href="../template/products/digital_twin/interactive_booths.html">
+                                <a href="../../../template/products/digital_twin/interactive_booths.html">
                                     <p class="card-text text-white text-center">Interactive Booth</p>
                                 </a>
                             </div>
@@ -220,7 +306,7 @@
                     <div class="col-4">
                         <div class="card card-products">
                             <div class="card-body">
-                                <a href="../template/products/digital_twin/hydraulic.html">
+                                <a href="../../../template/products/digital_twin/hydraulic.html">
                                     <p class="card-text text-white text-center">Hydraulic</p>
                                 </a>
                             </div>
@@ -235,45 +321,64 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <a href="../../template/products/hardware.html">
-                <p class="text-center nav_link font-weight-bold">HARDWARE</p></a>
+            <div class="col-md-4 my-1">
+                <a href="../../../template/products/hardware.html">
+                <p class="text-center nav_link text_color font-weight-bold">
+               HARDWARE </p> </a>
                 <div class="row mx-3">
-                    <div class="col-6">
-                        <div class="card card-products1" id="slidetwobg">
+                    <div class="col-4">
+                        <div class="card card-products">
                             <div class="card-body">
-                                <a href="../template/products/hardware/magnetic_card.html">
-                                    <p class="card-text text-white text-center">NFC Magnetic Cards/RFID</p>
-                                </a>
+                                <div class="card-body">
+                                    <a href="../../../template/products/hardware/magnetic_card.html">
+                                        <p class="card-text text-white text-center">NFC Magnetic Cards/RFID</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="card card-products1" id="slidetwobg">
+                    <div class="col-4">
+                        <div class="card card-products">
                             <div class="card-body">
-                                <a href="../template/products/hardware/interactive_light.html">
+                                <a href="../../../template/products/hardware/interactive_light.html">
                                     <p class="card-text text-white text-center">Interactive Light Panel</p>
                                 </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row mx-3 mt-2">
-                    <div class="col-6">
-                        <div class="card card-products1" id="slidetwobg">
+                    <div class="col-4">
+                        <div class="card card-products">
                             <div class="card-body">
-                                <a href="../template/products/hardware/interactive_models.html">
+                                <a href="../../../template/products/hardware/interactive_models.html">
                                     <p class="card-text text-white text-center">Interactive Models</p>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="card card-products1" id="slidetwobg">
+                </div>
+                <div class="row mx-3  my-2">
+                    <div class="col-4">
+                        <div class="card border-0 card-products d-none">
                             <div class="card-body">
-                                <a href="../template/products/hardware/holograms.html">
+
+                                <p class="card-text text-white text-center"></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-products">
+                            <div class="card-body">
+                                <a href="../../../template/products/hardware/holograms.html">
                                     <p class="card-text text-white text-center">Holograms</p>
                                 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card border-0 card-products d-none">
+                            <div class="card-body border-0">
+                                <p class="card-text text-white text-center"></p>
                             </div>
                         </div>
                     </div>
@@ -282,20 +387,20 @@
         </div>
     </div>
 
-    <div class="container-fluid collapse" id="services">
+    <div class="container-fluid collapse offcanvas-header2" id="services">
         <div class="row my-5">
             <div class="col-12 mb-3">
                 <a href="../../../template/services/services.html">
-                    <p class="text-center nav_link font-weight-bold">
-                        SERVICES</a>
+                    <p class="text-center text_color  nav_link font-weight-bold">
+                        SERVICES
                     </p>
                 </a>
             </div>
             <div class="col-sm-2">
                 <div class="card cardheight" id="slidetwobg">
                     <div class="card-body">
-                        <a href="../template/services/animation.html">
-                            <p class="card-text text-white text-center" style="font-size: 12px;">Animations and
+                        <a href="../../../template/services/animation.html">
+                            <p class="card-text text-white text-center">Animations and
                                 Scenarios Creation</p>
                         </a>
                     </div>
@@ -304,8 +409,8 @@
             <div class="col-sm-2">
                 <div class="card cardheight" id="slidetwobg">
                     <div class="card-body">
-                        <a href="../template/services/3d_model.html">
-                            <p class="card-text text-white text-center" style="font-size: 12px;">3D Models Creation, CAD
+                        <a href="../../../template/services/3d_model.html">
+                            <p class="card-text text-white text-center">3D Models Creation, CAD
                                 or 3D Scanning. Post-Processing</p>
                         </a>
                     </div>
@@ -314,8 +419,8 @@
             <div class="col-sm-2">
                 <div class="card cardheight" id="slidetwobg">
                     <div class="card-body">
-                        <a href="../template/services/content_creation.html">
-                            <p class="card-text text-white text-center" style="font-size: 12px;">Content Creation</p>
+                        <a href="../../../template/services/content_creation.html">
+                            <p class="card-text text-white text-center">Content Creation</p>
                         </a>
                     </div>
                 </div>
@@ -323,8 +428,8 @@
             <div class="col-sm-2">
                 <div class="card cardheight" id="slidetwobg">
                     <div class="card-body">
-                        <a href="../template/services/light_panels.html">
-                            <p class="card-text text-white text-center" style="font-size: 12px;">Interactive Light
+                        <a href="../../../template/services/light_panels.html">
+                            <p class="card-text text-white text-center">Interactive Light
                                 Panels Design and Production</p>
                         </a>
                     </div>
@@ -333,8 +438,8 @@
             <div class="col-sm-2">
                 <div class="card cardheight" id="slidetwobg">
                     <div class="card-body">
-                        <a href="../template/services/interactive_models.html">
-                            <p class="card-text text-white text-center" style="font-size: 12px;">Interactive Models
+                        <a href="../../../template/services/interactive_models.html">
+                            <p class="card-text text-white text-center">Interactive Models
                                 Design and Production</p>
                         </a>
                     </div>
@@ -343,8 +448,8 @@
             <div class="col-sm-2">
                 <div class="card cardheight" id="slidetwobg">
                     <div class="card-body">
-                        <a href="../template/services/exhibition_booths.html">
-                            <p class="card-text text-white text-center" style="font-size: 12px;">Exhibition Booths /
+                        <a href="../../../template/services/exhibition_booths.html">
+                            <p class="card-text text-white text-center">Exhibition Booths /
                                 Digital Corners Planning and Implementation</p>
                         </a>
                     </div>
@@ -358,8 +463,8 @@
     <div id="fullpage">
 
         <div class="section active fp-auto-height-responsive" id="section1">
-            <div class="carousel_item active" style="margin-top: 5%;">
-                <div class="software_wrapper " style="height:100vh">
+            <div class="carousel_item active" >
+                <div class="software_wrapper " >
                     <div class="text-box-4 container-fluid">
                         <div class="bg-overlay">
                             <div class="row w-100">
@@ -377,13 +482,13 @@
                                             creation, taking an interactive approach.
                                         </p>
                                     </div>
-                                    <div class="text-center">
-                                        <button class="btn text-light mt-2" type="button" id="btn-subheader1"
-                                            style="margin-top:10% !important">Download Brochure</button>
-                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn text-light mt-2" type="button" id="btn-subheader1"
+                            >Download Brochure</button>
                     </div>
                 </div>
             </div>
@@ -523,6 +628,7 @@
                                     <a href="../../../template/products/softwares/training_3d.html"> Training 3D </a><br>
                                     <a href="../../../template/products/softwares/service_3d.html"> Services 3D </a><br>
                                     <a href="../../../template/products/softwares/vr_ar.html"> VR/AR </a><br>
+                                    <a href="../../template/products/softwares/configurators.html"> Configurators </a><br>
                                     <a href="../../../template/products/softwares/virtual_tour.html"> Virtual Tour</a><br>
                                 </div>
                             </div>
