@@ -7,6 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>DGT</title>
     <link rel="icon" href="../../../assets/images/favicon.png" type="image/gif" sizes="64x64">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../assets/css/fullpage.css">
     <link rel="stylesheet" href="../../../assets/css/style.css">
@@ -16,7 +17,7 @@
 <body ng-controller="bodyController" class='h-100'>
     <!-- Header start-->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-        <a class="navbar-brand" href="/"><img src="../../../assets/images/logo.svg" height="60" alt=""></a>
+        <a class="navbar-brand" href="/"><img src="../../../assets/images/logo.svg" height="50" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="line"></span> 
@@ -48,8 +49,14 @@
                 <li class="nav-item mx-auto d-lg-block d-none">
                     <a class="nav-link" href="../../../template/contact.html">Contact</a>
                 </li>
+                <li class="nav-item mx-auto d-lg-block d-none">
+                    <div class="input-icons mt-1">
+                        <i class="fa icon">&#xf002;</i> 
+                        <input class="input-field" type="text"><span><a class="px-2" style="color: #2f1b5d; font-family: 'robotoBold';"  href="#">EN</a></span>
+                    </div>
+                </li>
                     <li class="d-lg-none d-block text-left">
-                        <a class="nav-link text-uppercase" href="/">Home  <span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-uppercase" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="d-lg-none d-block text-left" >
                     <a href="#" data-toggle="collapse" data-target="#toggleDemo"  class="collapsed nav-link dropdown-toggle"
@@ -120,9 +127,7 @@
                         <a class="nav-link text-uppercase" >language</a>
                     </li>
             </ul>
-            <form class="form-inline mx-lg-auto my-2 my-lg-0 d-lg-block d-none">
-                <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
-            </form>
+
         </div>
     </nav>
 
@@ -452,9 +457,10 @@
                 <div class="row w-100 mx-auto" style="margin-top: 100px !important;">
                     <div class="col-lg-8 col-md-6 col-xs-12">
                         <div class="container">
-                            <!-- <span style="font-size:150px; opacity:0.3; color: #2f1b5d; font-weight: 1000">02</span> -->
-                            <p
-                                style="font-size: 28px;color:#2f1b5d;  font-weight: 800;">
+                            <span  class="bg-num2">02</span>
+                            <div class="features_text2">
+                                <p
+                                style="font-size: 28px;color:#2f1b5d;  font-weight: 800; font-family: 'opensans';">
                                 Power 3D
                             </p>
                             <div class="text-left ">
@@ -470,10 +476,11 @@
                                     Download PDF
                                 </button></a>
                             </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-xs-12">
-                        <img src="../../../assets/images/10-Animation.png" class="w-100 mb-3" height="240px" alt="">
+                        <img src="../../../assets/images/10-Animation.png" class="w-100 mb-3" height="" alt="">
                         <div class="row">
                             <div class="col-md-5 col-xs-12">
                                 <img src="../../../assets/images/Power 3D (2).png" class="w-100" alt="">
@@ -493,7 +500,7 @@
         <!-- <video autoplay id="myvid2" class="video w-100" poster="../../../assets/images/power-3d-movie.png" controls>
             <source src="../../../assets/images/DGT.mp4" type="video/mp4">
         </video> -->
-        <iframe src="https://youtube.com/embed/OOr4rBnvwNo" class=" w-100" width="420" height="650" 
+        <iframe src="https://youtube.com/embed/OOr4rBnvwNo" class=" w-100" width="420" height="800" 
         poster="../../../assets/images/animation and scenario creation.png"></iframe>
     </div>
     <div class="section fp-auto-height-responsive" id="section2">
@@ -504,61 +511,78 @@
                 </h3>
                 <div class="container-fluid">
                     <div class="row m-1 p-0">
-                        <div class="col-lg-4 col-md-6 my-5 ">
-                            <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">01</span> -->
-                            <p
+                        <div class="col-lg-4 col-md-6">
+                            <span  class="bg-num1">01</span>
+                            <div class="features_text1">
+                                <p
                                 style="color:#fff;   font-weight: bold;text-transform: uppercase;">
                                 Overall ‘how it works’ Experiences</p>
         
-                            <p style=" color:#fff;" class="text-justify">Guided by 3D views, 3D product explosion effects, real time simulation, holograms and best suited media and digital equipment
+                            <p style=" color:#fff;" >Guided by 3D views, 3D product explosion effects, real time simulation, holograms and best suited media and digital equipment
                             </p>
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 my-5">
+                        <div class="col-lg-4 col-md-6 ">
                             <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">02</span> -->
-                            <p
-                                style="color:#fff;  font-weight: bold;text-transform: uppercase;">
-                                Innovative Solution for Large Database Management</p>
-                            <p style=" color:#fff;" class="text-justify">
-                                Storage and display of hundreds or thousands (even up to millions level) of products or elements
-                            </p>
+                            <span  class="bg-num1">02</span>
+                            <div class="features_text1">
+                                <p
+                                    style="color:#fff;  font-weight: bold;text-transform: uppercase;">
+                                    Innovative Solution for Large Database Management</p>
+                                <p style=" color:#fff;" >
+                                    Storage and display of hundreds or thousands (even up to millions level) of products or elements
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 my-5">
+                        <div class="col-lg-4 col-md-6 ">
                             <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">03</span> -->
-                            <p
-                                style="color:#fff;   font-weight: bold;text-transform: uppercase;">
-                                Optimum Designs Achievement</p>
-                            <p style="color:#fff;"class="text-justify">
-                                New product ideas generation not just variants, instant captures and annotations saved in the application
-                            </p>
+                            <span  class="bg-num1">03</span>
+                            <div class="features_text1">
+                                <p
+                                    style="color:#fff;   font-weight: bold;text-transform: uppercase;">
+                                    Optimum Designs Achievement</p>
+                                <p style="color:#fff;">
+                                    New product ideas generation not just variants, instant captures and annotations saved in the application
+                                </p>
+                            </div>
                         </div>
                     <!-- </div>
                     <div class="row m-1 p-0"> -->
-                        <div class="col-lg-4 col-md-6 my-5">
+                        <div class="col-lg-4 col-md-6 ">
                             <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">04</span> -->
-                            <p
-                                style="color:#fff;   font-weight: bold;text-transform: uppercase;">
-                                PROCESSES OPTIMIZATION AND STRONG SECURITY</p>
-                            <p style=" color:#fff;" class="text-justify">
-                                Minimized resources, high speed and efficiency, short time implementation, remote collaboration, training cost reduction, low cloud storage resources and traffic costs
-                            </p>
+                            <span  class="bg-num1">04</span>
+                            <div class="features_text1">
+                                <p
+                                    style="color:#fff;   font-weight: bold;text-transform: uppercase;">
+                                    PROCESSES OPTIMIZATION AND STRONG SECURITY</p>
+                                <p style=" color:#fff;" >
+                                    Minimized resources, high speed and efficiency, short time implementation, remote collaboration, training cost reduction, low cloud storage resources and traffic costs
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 mt-5">
+                        <div class="col-lg-4 col-md-6 ">
                             <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">05</span> -->
-                            <p
-                                style="color:#fff;   font-weight: bold;text-transform: uppercase;">
-                                Enterprise Ready</p>
-                            <p style=" color:#fff;" class="text-justify">
-                                ERP integration platform and service, cloud enabled accounts setting, bi-directionally data sharing with other critical enterprise applications
-                            </p>
+                            <span  class="bg-num1">05</span>
+                            <div class="features_text1">
+                                <p
+                                    style="color:#fff;   font-weight: bold;text-transform: uppercase;">
+                                    Enterprise Ready</p>
+                                <p style=" color:#fff;" >
+                                    ERP integration platform and service, cloud enabled accounts setting, bi-directionally data sharing with other critical enterprise applications
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 mt-5">
+                        <div class="col-lg-4 col-md-6 ">
                             <!-- <span style="font-size:100px; opacity:0.3; color: #fff; font-weight: 1000">06</span> -->
-                            <p
-                                style="color:#fff;   font-weight: bold;text-transform: uppercase;">
-                                Quality of Leads Increase</p>
-                            <p style="color:#fff; " class="text-justify">
-                                Conversion rates increase, prospects learning your concept and its particularities during the configuration process
-                            </p>
+                            <span  class="bg-num1">06</span>
+                            <div class="features_text1">
+                                <p
+                                    style="color:#fff;   font-weight: bold;text-transform: uppercase;">
+                                    Quality of Leads Increase</p>
+                                <p style="color:#fff; " >
+                                    Conversion rates increase, prospects learning your concept and its particularities during the configuration process
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -572,15 +596,19 @@
                     <h3 class="mt-5" style="font-family: opensansItalic;">Power 3D - Projects example</h3>
                 </div>
                 <div class="row w-100 mx-auto" style="margin-top: 75px !important;">
-                    <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4 col-md-6 col-xs-12">
                         <div class="container">
-                            <img src="../../../assets/images/turbo ok.png" alt="" class="w-100" style="height: 200px;">
+                            <img src="../../../assets/images/turbo ok.png" alt="" class="w-100">
                             <div class="text-center">
                                 <!-- <span style="font-size:100px; opacity:0.3; color: #2f1b5d; font-weight: 1000">02.1</span> -->
+                                <span  class="bg-num">02.1</span>
+                            <div class="features_text1">
                                 <p
                                     style="font-size: 24px;color:#2f1b5d;  font-weight: bold; text-transform: uppercase;">
                                     Turbocharger
                                 </p>
+                                </div>
                                 <a href="../../../template/products/softwares/power3d/turbocharger.html" class="text-light">
                                 <button class="btn text-light mx-auto mt-2" type="button" id="btn-subheader1"
                                     style="margin-top:10% !important"> VIEW PROJECT
@@ -589,15 +617,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="col-lg-4 col-md-6 col-xs-12">
                         <div class="container">
-                            <img src="../../../assets/images/hidraulic 5.png" alt="" class="w-100" style="height: 200px;">
+                            <img src="../../../assets/images/14 hydraulicc.png" alt="" class="w-100" >
                             <div class="text-center">
                                 <!-- <span style="font-size:100px; opacity:0.3; color: #2f1b5d; font-weight: 1000">02.2</span> -->
+                                <span  class="bg-num">02.2</span>
+                            <div class="features_text1">
                                 <p
                                     style="font-size: 24px;color:#2f1b5d;  font-weight: bold; text-transform: uppercase;">
                                     hidraulica
                                 </p>
+                            </div>
                                 <a href="../../../template/products/softwares/power3d/hidraulic.html" class="text-light">
                                     <button class="btn text-light mx-auto mt-2" type="button" id="btn-subheader1"
                                         style="margin-top:10% !important"> VIEW PROJECT
@@ -607,13 +638,14 @@
                         </div>
 
                     </div>
+                    <div class="col-lg-2"></div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer start -->
     <div class="section fp-auto-height-responsive footer_section" id="section6" >
-        <div class="container-fluid"  id="slidetwobgright">
+        <!-- <div class="container-fluid"  id="slidetwobgright">
                 <div class="row">
                     <div class="col-12 mt-5 pt-3">
                         <h1 class="font-weight-bold mb-4 text-white text-center" id="sub-headers">Who we are</h1>
@@ -631,17 +663,21 @@
                         </a>
                     </div>
                 </div>
-        </div>
+        </div> -->
         <div class="container-fluid footer_wrapper">
             <div class="row">
                 <div class="col-md-2">
                     <img src="../../../assets/images/logo.svg" class="img-thumbnail" height="80" alt="">
                     <ul class="footer-list1 mt-3">
-                        <li><a href="index.html"> HOME </a></li>
-                        <li><a href="../../../template/products/software.html"> PRODUCTS </a></li>
-                        <li><a href="../../../template/services/services.html"> SERVICES </a></li>
-                        <li><a href="../../../template/gallery.html"> GALLERY </a></li>
-                        <li><a href="../../../template/contact.html"> CONTACTS </a></li>
+                        <li><a href="index.html"><span style="color: #2f1b5d;">HOME</span> </a></li>
+                        <li><a href="../../../template/products/software.html"><span
+                                    style="color: #2f1b5d;">PRODUCTS</span> </a></li>
+                        <li><a href="../../../template/services/services.html"><span
+                                    style="color: #2f1b5d;">SERVICES</span> </a></li>
+                        <li><a href="../../../template/gallery.html"><span style="color: #2f1b5d;">GALLERY</span> </a>
+                        </li>
+                        <li><a href="../../../template/contact.html"><span style="color: #2f1b5d;">CONTACTS</span> </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-2">
@@ -649,24 +685,39 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="footer-list2">
-                                <a href="../../../template/products/software.html"> SOFTWARE </a><br>
-                                <a href="../../../template/products/softwares/animations.html"> Animations </a><br>
-                                <a href="../../../template/products/softwares/power_3d.html"> Power 3D </a><br>
-                                <a href="../../../template/products/softwares/digital_twin.html" class="font-weight-bold "> Digital Twin </a><br>
-                                <a href="../../../template/products/softwares/training_3d.html"> Training 3D </a><br>
-                                <a href="../../../template/products/softwares/service_3d.html"> Services 3D </a><br>
-                                <a href="../../../template/products/softwares/vr_ar.html"> VR/AR </a><br>
-                                <a href="../../../template/products/softwares/configurators.html"> Configurators </a><br>
-                                <a href="../../../template/products/softwares/virtual_tour.html"> Virtual Tour</a><br>
+                                <a href="../../../template/products/software.html"><span
+                                        style="color: #2f1b5d;">SOFTWARE</span> </a><br>
+                                <a href="../../../template/products/softwares/animations.html"><span
+                                        style="color: #2f1b5d;">Animations</span> </a><br>
+                                <a href="../../../template/products/softwares/power_3d.html"><span
+                                        style="color: #2f1b5d;"> Power 3D</span> </a><br>
+                                <a href="../../../template/products/softwares/digital_twin.html"> <span
+                                        style="color: #2f1b5d;" class="font-weight-bold">Digital Twin</span>
+                                </a><br>
+                                <a href="../../../template/products/softwares/training_3d.html"><span
+                                        style="color: #2f1b5d;">Training 3D</span> </a><br>
+                                <a href="../../../template/products/softwares/service_3d.html"><span
+                                        style="color: #2f1b5d;">Services 3D</span> </a><br>
+                                <a href="../../../template/products/softwares/vr_ar.html"><span
+                                        style="color: #2f1b5d;">VR/AR</span> </a><br>
+                                <a href="../../../template/products/softwares/configurators.html"><span
+                                        style="color: #2f1b5d;">Configurators</span> </a><br>
+                                <a href="../../../template/products/softwares/virtual_tour.html"><span
+                                        style="color: #2f1b5d;">Virtual Tour</span> </a><br>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="footer-list2">
-                                <a href="../../../template/products/hardware.html"> HARDWARE </a><br>
-                                <a href="../../../template/products/hardware/magnetic_card.html"> NFC Magnetic Cards/RFID</a><br>
-                                <a href="../../../template/products/hardware/interactive_light.html"> Interactive Light Panel</a><br>
-                                <a href="../../../template/products/hardware/interactive_models.html"> Interactive Models</a><br>
-                                <a href="../../../template/products/hardware/holograms.html"> Holograms</a><br>
+                                <a href="../../../template/products/hardware.html"><span style="color: #2f1b5d;">
+                                        HARDWARE</span> </a><br>
+                                <a href="../../../template/products/hardware/magnetic_card.html"><span
+                                        style="color: #2f1b5d;"> NFC Magnetic Cards/RFID</span></a><br>
+                                <a href="../../../template/products/hardware/interactive_light.html"><span
+                                        style="color: #2f1b5d;"> Interactive Light Panel</span></a><br>
+                                <a href="../../../template/products/hardware/interactive_models.html"><span
+                                        style="color: #2f1b5d;"> Interactive Models</span></a><br>
+                                <a href="../../../template/products/hardware/holograms.html"><span
+                                        style="color: #2f1b5d;"> Holograms</span></a><br>
                             </div>
                         </div>
                     </div>
@@ -674,30 +725,43 @@
                 <div class="col-md-1">
                     <p class="footer-header pb-2">DIGITAL TWIN</p>
                     <div class="footer-list2">
-                        <a href="../../../template/products/digital_twin/automotive.html"> Automotive  </a><br>
-                        <a href="../../../template/products/digital_twin/agriculture.html"> Agriculture 5G </a><br>
-                        <a href="../../../template/products/digital_twin//industry.html"> Industry 4.0  </a><br>
-                        <a href="../../../template/products/digital_twin/infrastructure.html"> Infrastructure  </a><br>
-                        <a href="../../../template/products/digital_twin/works.html"> 5G How it Works </a><br>
-                        <a href="../../../template/products/digital_twin/interactive_booths.html"> Interactive Booth </a><br>
-                        <a href="../../../template/products/digital_twin/hydraulic.html"> Hydraulic.</a>
+                        <a href="../../../template/products/digital_twin/automotive.html"><span
+                                style="color: #2f1b5d;"> Automotive</span> </a><br>
+                        <a href="../../../template/products/digital_twin/agriculture.html"><span
+                                style="color: #2f1b5d;"> Agriculture 5G</span> </a><br>
+                        <a href="../../../template/products/digital_twin//industry.html"><span style="color: #2f1b5d;">
+                                Industry 4.0 </span></a><br>
+                        <a href="../../../template/products/digital_twin/infrastructure.html"><span
+                                style="color: #2f1b5d;"> Infrastructure </span></a><br>
+                        <a href="../../../template/products/digital_twin/works.html"><span style="color: #2f1b5d;"> 5G
+                                How it Works</span> </a><br>
+                        <a href="../../../template/products/digital_twin/interactive_booths.html"><span
+                                style="color: #2f1b5d;"> Interactive Booth</span></a><br>
+                        <a href="../../../template/products/digital_twin/hydraulic.html"><span style="color: #2f1b5d;">
+                                Hydraulic</span></a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <p class="footer-header pb-2">SERVICES</p>
                     <div class="footer-list2">
-                        <a href="../../../template/services/animation.html"> Animations and Scenarios Creation </a><br>
-                        <a href="../../../template/services/3d_model.html"> 3d Models Creation, CAD, 3D Scanning, Post-Processing </a><br>
-                        <a href="../../../template/services/content_creation.html"> Content Creation </a><br>
-                        <a href="../../../template/services/light_panels.html"> Interactive Light Panels Design and Production </a><br>
-                        <a href="../../../template/services/interactive_models.html"> Interactive Models Design and Production </a><br>
-                        <a href="../../../template/services/exhibition_booths.html"> Exhibition Booths / Digital Corners Planning and Implementation </a>
+                        <a href="../../../template/services/animation.html"><span style="color: #2f1b5d;"> Animations
+                                and Scenarios Creation </span></a><br>
+                        <a href="../../../template/services/3d_model.html"><span style="color: #2f1b5d;"> 3d Model
+                                Creation, CAD, 3D Scanning, Post-Processing </span></a><br>
+                        <a href="../../../template/services/content_creation.html"> <span
+                                style="color: #2f1b5d;">Content Creation </span></a><br>
+                        <a href="../../../template/services/light_panels.html"><span style="color: #2f1b5d;">
+                                Interactive Light Panels Design and Production</span></a><br>
+                        <a href="../../../template/services/interactive_models.html"><span style="color: #2f1b5d;">
+                                Interactive Models Design and Production</span> </a><br>
+                        <a href="../../../template/services/exhibition_booths.html"><span style="color: #2f1b5d;">
+                                Exhibition Booths / Digital Corners Planning and Implementation </span></a>
                     </div>
                 </div>
                 <div class="col-md-1">
                     <p class="footer-header pb-2">CONTACTS</p>
                     <div class="footer-list2">
-                        <a href="#">office@gamifyworld.com</a>
+                        <a href="#"><span style="color: #2f1b5d;">office@gamifyworld.com</span></a>
                     </div>
                     <div class="pt-2 row">
                         <img src="../../assets/images/icons/facebook.svg" alt="" height="25px">
@@ -708,13 +772,15 @@
                 <div class="col-md-3">
                     <p class="text-right" style="color: #2f2971;">EN &nbsp; FR &nbsp; RO &nbsp; </p>
                     <div class="policy-footer">
-                        <div class="footer-list2">
-                            PRIVACY POLICY&nbsp;&nbsp;TERMS OF USE&nbsp;&nbsp;LEGAL&nbsp;&nbsp;CUSTOMER
-                            SUPPORT&nbsp;&nbsp;SITE MAP
+                        <div class="footer-list2"><span style="color: #2f1b5d;" class="p-1">PRIVACY POLICY</span>
+                            <span style="color: #2f1b5d;" class="p-1">TERMS OF USE</span>
+                            <span style="color: #2f1b5d;" class="p-1">LEGAL</span>
+                            <span style="color: #2f1b5d;" class="p-1">CUSTOMER SUPPORT</span>
+                            <span style="color: #2f1b5d;" class="p-1">SITE MAP</span>
                         </div>
                     </div>
-                    <div class=" footer-list2 copywrite-footer text-right">
-                        Digital Agency Software&reg; 2020 All rights reserved.
+                    <div class=" footer-list2 copywrite-footer text-right"><span style="color: #2f1b5d;">
+                            Digital Agency Software&reg; 2020 All rights reserved.</span>
                     </div>
                 </div>
             </div>

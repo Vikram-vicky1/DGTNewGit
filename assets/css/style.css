@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
 @font-face {
     font-family: myriad;
     src: url(../Fonts/MyriadPro-Regular.otf);
@@ -76,6 +81,7 @@ nav {
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link,.navbar-light .navbar-nav .nav-link {
     color: #2f1c5d;
     font-family: 'robotoBold';
+    text-transform: uppercase;
 }
 
 
@@ -144,8 +150,10 @@ nav {
 #products1, #services {
     position: absolute;
     background-color: #fff;
-    z-index:9999;
-    margin-top:86px;
+    z-index: 9999;
+    height: 475px;
+    margin-top: 74px;
+    padding-top: 25px;
 }
 
 #products1 .col-4 {
@@ -284,8 +292,8 @@ nav {
 
 #slidetwobgright{
     background-color: #2f1b5f;
-    height: 60vh;
-    margin-top: 4%;
+    height: 58vh;
+    margin-top: 6%;
     border-top-left-radius: 200px;
 }
 
@@ -652,7 +660,7 @@ nav {
     min-height: 100vh;
     padding: 3em 4px; 
     position: absolute; 
-    top: 12%;
+    top: 11%;
  }
 
  
@@ -660,6 +668,7 @@ nav {
     background-color: #fff;
     color: #2f1b5d; 
     min-height: 100vh;
+    min-width: 100%;
     padding: 3em 4px; 
     position: absolute; 
     top: 12%;
@@ -917,12 +926,12 @@ nav {
     font-weight: bold; 
     font-size: 11px; 
     line-height: 1.5em;
-    font-family: robotoBold;
+    font-family: 'robotoBold';
 }
 
 .footer-header{
     color: #2f1b5d; 
-    font-family: robotoBold;
+    font-family: 'robotoBold';
     font-size: 11px;
     font-weight: bold; 
     border-bottom: 1px solid #2f2971;
@@ -930,7 +939,7 @@ nav {
 
 .footer-list2{
     color: #2f1b5d; 
-    font-family: myriadt;
+    font-family: 'myriad';
     /* font-weight: bold;  */
     font-size: 8px; 
     line-height: 1.5em; 
@@ -969,6 +978,13 @@ nav {
     font-weight: 1000
 }
 
+.bg-num2{
+    font-size:150px;
+    opacity:0.1; 
+    color: #2f1b5d; 
+    font-weight: 1000
+}
+
 .features_text{
     margin-left: 60px;
     margin-top: 15px;
@@ -978,6 +994,11 @@ nav {
 .features_text1{
     margin-left: 60px;
     margin-top: -100px;
+}
+
+.features_text2{
+    margin-left: 60px;
+    margin-top: -115px;
 }
 
 
@@ -1324,6 +1345,13 @@ body .offcanvas-active{
     font-weight: 1000
 }
 
+.bg-num2{
+    font-size:70px;
+    opacity:0.1; 
+    color: #2f1b5d; 
+    font-weight: 1000
+}
+
 .features_text{
     margin-left: 40px;
     margin-top: 40px;
@@ -1334,6 +1362,12 @@ body .offcanvas-active{
     margin-left: 40px;
     margin-top: -60px;
 }
+
+.features_text2 {
+    margin-left: 30px;
+    margin-top: -60px;
+}
+
  .navbar-nav {
      width: 100% !important;
  }

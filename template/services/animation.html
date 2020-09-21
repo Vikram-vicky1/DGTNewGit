@@ -7,6 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>DGT</title>
     <link rel="icon" href="../../../assets/images/favicon.png" type="image/gif" sizes="64x64">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../assets/css/fullpage.css">
     <link rel="stylesheet" href="../../../assets/css/style.css">
@@ -16,7 +17,7 @@
 <body ng-controller="bodyController" class='h-100'>
     <!-- Header start-->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-        <a class="navbar-brand" href="/"><img src="../../../assets/images/logo.svg" height="60" alt=""></a>
+        <a class="navbar-brand" href="/"><img src="../../../assets/images/logo.svg" height="50" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="line"></span> 
@@ -40,13 +41,19 @@
                 </li>
                 <li class="nav-item mx-auto dropdown d-lg-block d-none">
                     <a class="nav-link dropdown-toggle" href="#services" data-toggle="dropdown" data-target=""
-                        aria-expanded="false" aria-controls="serviceListList" id="serviceListList"><u>Services</u> </a>
+                        aria-expanded="false" aria-controls="serviceListList" id="serviceListList"><u>Services</u></a>
                 </li>                    
                 <li class="nav-item mx-auto d-lg-block d-none">
                     <a class="nav-link" href="../../../template/gallery.html">Gallery</a>
                 </li>
                 <li class="nav-item mx-auto d-lg-block d-none">
                     <a class="nav-link" href="../../../template/contact.html">Contact</a>
+                </li>
+                <li class="nav-item mx-auto d-lg-block d-none">
+                    <div class="input-icons mt-1">
+                        <i class="fa icon">&#xf002;</i> 
+                        <input class="input-field" type="text"><span><a class="px-2" style="color: #2f1b5d; font-family: 'robotoBold';"  href="#">EN</a></span>
+                    </div>
                 </li>
                     <li class="d-lg-none d-block text-left">
                         <a class="nav-link text-uppercase" href="/">Home <span class="sr-only">(current)</span></a>
@@ -120,9 +127,7 @@
                         <a class="nav-link text-uppercase" >language</a>
                     </li>
             </ul>
-            <form class="form-inline mx-lg-auto my-2 my-lg-0 d-lg-block d-none">
-                <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
-            </form>
+
         </div>
     </nav>
 
@@ -450,10 +455,12 @@
         <div class="carousel_item h-100 active" data-section-name="video">
             <div class="container-fluid d-block m-auto" style="padding: 5em 1em;">
                 <div class="row w-100 mx-auto" style="margin-top: 100px !important;">
-                    <div class="col-lg-7 col-md-6 col-xs-12" >
+                    <div class="col-lg-8 col-md-6 col-xs-12" >
                             <!-- <span style="font-size:150px; opacity:0.1; color: #2f1b5d; font-weight: 1000">01</span> -->
+                            <span  class="bg-num2">01</span>
+                            <div class="features_text2">
                             <p
-                                style="font-size: 28px;color:#2f1b5d;  font-weight: 800;">
+                                style="font-size: 28px;color:#2f1b5d;  font-weight: 800; font-family: 'opensans';">
                                 Animations and Scenarios Creation</p>
                                 <div class="text-left ">
                                     <p id="sub-headers2">Upgrade with 3D customized content creation</p>
@@ -466,14 +473,15 @@
                                     </p>
                                 </div>
                                 <div class="mt-4">
-                                    <a href="../../assets/pdf/DGT- Business Cards.pdf" download>
+                                    <a href="../../assets/pdf/04.pdf" download>
                                         <button class="btn text-light mx-auto" type="button" id="btn-subheader1">
                                             Download PDF
                                         </button></a>
                                 </div>
+                            </div>
                     </div>
-                    <div class="col-lg-5 col-md-6 col-xs-12" >
-                        <img src="../../assets/images/industry 4.0.png" class="w-100 mb-3" style="height: 240px;" alt="">
+                    <div class="col-lg-4 col-md-6 col-xs-12" >
+                        <img src="../../assets/images/industry 4.0.png" class="w-100 mb-3"  alt="">
                         <div class="row">
                             <div class="col-md-5 col-xs-12">
                                 <img src="../../assets/images/scenario creation.png" class="w-100" alt="">
@@ -491,35 +499,39 @@
 
     <!-- Footer start -->
     <div class="section fp-auto-height-responsive footer_section" id="section6" >
-        <div class="container-fluid"  id="slidetwobgright">
-            <div class="row">
-                <div class="col-12 mt-5 pt-3">
-                    <h1 class="font-weight-bold mb-4 text-white text-center" id="sub-headers">Who we are</h1>
+        <!-- <div class="container-fluid"  id="slidetwobgright">
+                <div class="row">
+                    <div class="col-12 mt-5 pt-3">
+                        <h1 class="font-weight-bold mb-4 text-white text-center" id="sub-headers">Who we are</h1>
+                    </div>
+                    <div class="col-12">
+                        <h4 class="text-light mb-3 text-center" style="font-family: opensansItalic;">We are a Romanian-Canadian team of experts in <br>
+                            gamiﬁcation, digitalization, graphics, UI-UX, animations, <br>
+                            digital equipment, production and optimization.
+                        </h4>
+                        <p class="text-light text-center" style="font-family: robotoRegular;">Do you have a project? Let us know!</p>                            
+                        <a href="../../../template/contact.html" class="">
+                            <button class="btn text-light d-block mx-auto mt-2" type="button" id="btn-subheader">
+                                CONTACT US
+                            </button>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-12">
-                    <h4 class="text-light mb-3 text-center" style="font-family: opensansItalic;">We are a Romanian-Canadian team of experts in <br>
-                        gamiﬁcation, digitalization, graphics, UI-UX, animations, <br>
-                        digital equipment, production and optimization.
-                    </h4>
-                    <p class="text-light text-center" style="font-family: robotoRegular;">Do you have a project? Let us know!</p>                            
-                    <a href="../../../template/contact.html" class="">
-                        <button class="btn text-light d-block mx-auto mt-2" type="button" id="btn-subheader">
-                            CONTACT US
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
+        </div> -->
         <div class="container-fluid footer_wrapper">
             <div class="row">
                 <div class="col-md-2">
                     <img src="../../../assets/images/logo.svg" class="img-thumbnail" height="80" alt="">
                     <ul class="footer-list1 mt-3">
-                        <li><a href="index.html"> HOME </a></li>
-                        <li><a href="../../../template/products/software.html"> PRODUCTS </a></li>
-                        <li><a href="../../../template/services/services.html"> SERVICES </a></li>
-                        <li><a href="../../../template/gallery.html"> GALLERY </a></li>
-                        <li><a href="../../../template/contact.html"> CONTACTS </a></li>
+                        <li><a href="index.html"><span style="color: #2f1b5d;">HOME</span> </a></li>
+                        <li><a href="../../../template/products/software.html"><span
+                                    style="color: #2f1b5d;">PRODUCTS</span> </a></li>
+                        <li><a href="../../../template/services/services.html"><span
+                                    style="color: #2f1b5d;">SERVICES</span> </a></li>
+                        <li><a href="../../../template/gallery.html"><span style="color: #2f1b5d;">GALLERY</span> </a>
+                        </li>
+                        <li><a href="../../../template/contact.html"><span style="color: #2f1b5d;">CONTACTS</span> </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-2">
@@ -527,24 +539,39 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="footer-list2">
-                                <a href="../../../template/products/software.html"> SOFTWARE </a><br>
-                                <a href="../../../template/products/softwares/animations.html"> Animations </a><br>
-                                <a href="../../../template/products/softwares/power_3d.html"> Power 3D </a><br>
-                                <a href="../../../template/products/softwares/digital_twin.html" class="font-weight-bold "> Digital Twin </a><br>
-                                <a href="../../../template/products/softwares/training_3d.html"> Training 3D </a><br>
-                                <a href="../../../template/products/softwares/service_3d.html"> Services 3D </a><br>
-                                <a href="../../../template/products/softwares/vr_ar.html"> VR/AR </a><br>
-                                <a href="../../template/products/softwares/configurators.html"> Configurators </a><br>
-                                <a href="../../../template/products/softwares/virtual_tour.html"> Virtual Tour</a><br>
+                                <a href="../../../template/products/software.html"><span
+                                        style="color: #2f1b5d;">SOFTWARE</span> </a><br>
+                                <a href="../../../template/products/softwares/animations.html"><span
+                                        style="color: #2f1b5d;">Animations</span> </a><br>
+                                <a href="../../../template/products/softwares/power_3d.html"><span
+                                        style="color: #2f1b5d;"> Power 3D</span> </a><br>
+                                <a href="../../../template/products/softwares/digital_twin.html"> <span
+                                        style="color: #2f1b5d;" class="font-weight-bold">Digital Twin</span>
+                                </a><br>
+                                <a href="../../../template/products/softwares/training_3d.html"><span
+                                        style="color: #2f1b5d;">Training 3D</span> </a><br>
+                                <a href="../../../template/products/softwares/service_3d.html"><span
+                                        style="color: #2f1b5d;">Services 3D</span> </a><br>
+                                <a href="../../../template/products/softwares/vr_ar.html"><span
+                                        style="color: #2f1b5d;">VR/AR</span> </a><br>
+                                <a href="../../../template/products/softwares/configurators.html"><span
+                                        style="color: #2f1b5d;">Configurators</span> </a><br>
+                                <a href="../../../template/products/softwares/virtual_tour.html"><span
+                                        style="color: #2f1b5d;">Virtual Tour</span> </a><br>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="footer-list2">
-                                <a href="../../../template/products/hardware.html"> HARDWARE </a><br>
-                                <a href="../../../template/products/hardware/magnetic_card.html"> NFC Magnetic Cards/RFID</a><br>
-                                <a href="../../../template/products/hardware/interactive_light.html"> Interactive Light Panel</a><br>
-                                <a href="../../../template/products/hardware/interactive_models.html"> Interactive Models</a><br>
-                                <a href="../../../template/products/hardware/holograms.html"> Holograms</a><br>
+                                <a href="../../../template/products/hardware.html"><span style="color: #2f1b5d;">
+                                        HARDWARE</span> </a><br>
+                                <a href="../../../template/products/hardware/magnetic_card.html"><span
+                                        style="color: #2f1b5d;"> NFC Magnetic Cards/RFID</span></a><br>
+                                <a href="../../../template/products/hardware/interactive_light.html"><span
+                                        style="color: #2f1b5d;"> Interactive Light Panel</span></a><br>
+                                <a href="../../../template/products/hardware/interactive_models.html"><span
+                                        style="color: #2f1b5d;"> Interactive Models</span></a><br>
+                                <a href="../../../template/products/hardware/holograms.html"><span
+                                        style="color: #2f1b5d;"> Holograms</span></a><br>
                             </div>
                         </div>
                     </div>
@@ -552,30 +579,43 @@
                 <div class="col-md-1">
                     <p class="footer-header pb-2">DIGITAL TWIN</p>
                     <div class="footer-list2">
-                        <a href="../../../template/products/digital_twin/automotive.html"> Automotive</a><br>
-                        <a href="../../../template/products/digital_twin/agriculture.html"> Agriculture 5G </a><br>
-                        <a href="../../../template/products/digital_twin//industry.html"> Industry 4.0 </a><br>
-                        <a href="../../../template/products/digital_twin/infrastructure.html"> Infrastructure  </a><br>
-                        <a href="../../../template/products/digital_twin/works.html"> 5G How it Works  </a><br>
-                        <a href="../../../template/products/digital_twin/interactive_booths.html"> Interactive Booth </a><br>
-                        <a href="../../../template/products/digital_twin/hydraulic.html"> Hydraulic.</a>
+                        <a href="../../../template/products/digital_twin/automotive.html"><span
+                                style="color: #2f1b5d;"> Automotive</span> </a><br>
+                        <a href="../../../template/products/digital_twin/agriculture.html"><span
+                                style="color: #2f1b5d;"> Agriculture 5G</span> </a><br>
+                        <a href="../../../template/products/digital_twin//industry.html"><span style="color: #2f1b5d;">
+                                Industry 4.0 </span></a><br>
+                        <a href="../../../template/products/digital_twin/infrastructure.html"><span
+                                style="color: #2f1b5d;"> Infrastructure </span></a><br>
+                        <a href="../../../template/products/digital_twin/works.html"><span style="color: #2f1b5d;"> 5G
+                                How it Works</span> </a><br>
+                        <a href="../../../template/products/digital_twin/interactive_booths.html"><span
+                                style="color: #2f1b5d;"> Interactive Booth</span></a><br>
+                        <a href="../../../template/products/digital_twin/hydraulic.html"><span style="color: #2f1b5d;">
+                                Hydraulic</span></a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <p class="footer-header pb-2">SERVICES</p>
                     <div class="footer-list2">
-                        <a href="../../../template/services/animation.html"> Animations and Scenarios Creation </a><br>
-                        <a href="../../../template/services/3d_model.html"> 3d Models Creation, CAD, 3D Scanning, Post-Processing </a><br>
-                        <a href="../../../template/services/content_creation.html"> Content Creation </a><br>
-                        <a href="../../../template/services/light_panels.html"> Interactive Light Panels Design and Production </a><br>
-                        <a href="../../../template/services/interactive_models.html"> Interactive Models Design and Production </a><br>
-                        <a href="../../../template/services/exhibition_booths.html"> Exhibition Booths / Digital Corners Planning and Implementation </a>
+                        <a href="../../../template/services/animation.html"><span style="color: #2f1b5d;"> Animations
+                                and Scenarios Creation </span></a><br>
+                        <a href="../../../template/services/3d_model.html"><span style="color: #2f1b5d;"> 3d Model
+                                Creation, CAD, 3D Scanning, Post-Processing </span></a><br>
+                        <a href="../../../template/services/content_creation.html"> <span
+                                style="color: #2f1b5d;">Content Creation </span></a><br>
+                        <a href="../../../template/services/light_panels.html"><span style="color: #2f1b5d;">
+                                Interactive Light Panels Design and Production</span></a><br>
+                        <a href="../../../template/services/interactive_models.html"><span style="color: #2f1b5d;">
+                                Interactive Models Design and Production</span> </a><br>
+                        <a href="../../../template/services/exhibition_booths.html"><span style="color: #2f1b5d;">
+                                Exhibition Booths / Digital Corners Planning and Implementation </span></a>
                     </div>
                 </div>
                 <div class="col-md-1">
                     <p class="footer-header pb-2">CONTACTS</p>
                     <div class="footer-list2">
-                        <a href="#">office@gamifyworld.com</a>
+                        <a href="#"><span style="color: #2f1b5d;">office@gamifyworld.com</span></a>
                     </div>
                     <div class="pt-2 row">
                         <img src="../../assets/images/icons/facebook.svg" alt="" height="25px">
@@ -586,13 +626,15 @@
                 <div class="col-md-3">
                     <p class="text-right" style="color: #2f2971;">EN &nbsp; FR &nbsp; RO &nbsp; </p>
                     <div class="policy-footer">
-                        <div class="footer-list2">
-                            PRIVACY POLICY&nbsp;&nbsp;TERMS OF USE&nbsp;&nbsp;LEGAL&nbsp;&nbsp;CUSTOMER
-                            SUPPORT&nbsp;&nbsp;SITE MAP
+                        <div class="footer-list2"><span style="color: #2f1b5d;" class="p-1">PRIVACY POLICY</span>
+                            <span style="color: #2f1b5d;" class="p-1">TERMS OF USE</span>
+                            <span style="color: #2f1b5d;" class="p-1">LEGAL</span>
+                            <span style="color: #2f1b5d;" class="p-1">CUSTOMER SUPPORT</span>
+                            <span style="color: #2f1b5d;" class="p-1">SITE MAP</span>
                         </div>
                     </div>
-                    <div class=" footer-list2 copywrite-footer text-right">
-                        Digital Agency Software&reg; 2020 All rights reserved.
+                    <div class=" footer-list2 copywrite-footer text-right"><span style="color: #2f1b5d;">
+                            Digital Agency Software&reg; 2020 All rights reserved.</span>
                     </div>
                 </div>
             </div>
