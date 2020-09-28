@@ -3,6 +3,13 @@ html{
 }
 
 
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+
+
 @font-face {
     font-family: myriad;
     src: url(../Fonts/MyriadPro-Regular.otf);
@@ -446,6 +453,7 @@ nav {
     background-repeat: no-repeat;
     background-position-y: center;
     height: 75vh;
+    width: 100%;
     position: absolute;
 }
 
@@ -635,6 +643,7 @@ nav {
  video{
     width: 100%;
     height: auto;
+    object-fit: cover;
  }
 
  iframe{
@@ -668,6 +677,7 @@ nav {
  #features_section{
     background-color: #2f1b5d; 
     min-height: 100vh;
+    width: 100%;
     padding: 3em 4px; 
     position: absolute; 
     top: 11%;
@@ -969,7 +979,7 @@ nav {
     font-size: 150px;
     opacity: 0.1;
     color: #fff;
-    font-weight: 1000;
+    font-weight: 900;
     
 } 
 
@@ -977,7 +987,7 @@ nav {
     font-size:120px;
     opacity:0.1; 
     color: #2f1b5d; 
-    font-weight: 1000
+    font-weight: 900;
 }
 
 
@@ -985,14 +995,14 @@ nav {
     font-size:120px;
     opacity:0.1; 
     color: #fff; 
-    font-weight: 1000
+    font-weight: 900;
 }
 
 .bg-num2{
     font-size:150px;
     opacity:0.1; 
     color: #2f1b5d; 
-    font-weight: 1000
+    font-weight: 900;
 }
 
 .features_text{
@@ -1020,7 +1030,7 @@ nav {
         font-size: 70px;
         opacity: 0.1;
         color: #fff;
-        font-weight: 1000;
+        font-weight: 900;
     } 
 
     .carousel_item h2{
@@ -1344,7 +1354,7 @@ body .offcanvas-active{
     font-size:70px;
     opacity:0.1; 
     color: #2f1b5d; 
-    font-weight: 1000
+    font-weight: 900;
 }
 
 
@@ -1352,14 +1362,14 @@ body .offcanvas-active{
     font-size:70px;
     opacity:0.1; 
     color: #fff; 
-    font-weight: 1000
+    font-weight: 900;
 }
 
 .bg-num2{
     font-size:70px;
     opacity:0.1; 
     color: #2f1b5d; 
-    font-weight: 1000
+    font-weight: 900;
 }
 
 .features_text{
@@ -1431,6 +1441,7 @@ body .offcanvas-active{
     background-repeat: no-repeat;
     background-position-y: center;
     height: 75vh;
+    width: 100%;
     position: static;
 }
 
@@ -1501,10 +1512,36 @@ body .offcanvas-active{
         width: 150px !important;
         margin-left: 15px;
     }
+/* 
+    
+    ul#toggleDemo.collapse.show{
+        list-style: none;
+        margin-top: -6%;
+        margin-left: -33%;
+    }
+
+    ul#toggleDemo1.text-left.collapse.show{
+        margin-top: -6%;
+        margin-left: -35%;
+    }
+
+    .mobile_nav_header{
+        margin-left: -15%;
+    }
+
+    a.nav-link.text-uppercase{
+        color: #fff;
+        font-weight: bold;
+    }
+ 
+    a.nav-link.dropdown-toggle{
+        color: #fff;
+        font-weight: bold;
+    }*/
  }
 
 
-
+ 
 
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
    
@@ -1719,4 +1756,59 @@ body .offcanvas-active{
     }
 }
 
-  
+/* @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+   a.nav-link.text-uppercase{
+       color: #fff;
+       font-weight: bold;
+   }
+
+   a.nav-link.dropdown-toggle{
+       color: #fff;
+       font-weight: bold;
+   }
+
+   a.collapsed.nav-link.dropdown-toggle{
+       color: #fff;
+       margin-top: 0%;
+   }
+
+   ul#toggleDemo1.text-left.collapse.show{
+    list-style: none;
+    margin-top: -32px;
+    margin-left: 25%;
+   }
+
+    p#sub-headers-p.text-right.text-white{
+        font-size: 13px;
+    }
+
+    ul#toggleDemo.collapse.show{
+        list-style: none;
+        margin-top: -30px;
+        margin-left: 25%;
+    }
+
+    ul#togglechild1.text-left.collapse.show{
+        list-style: none;
+        margin-top: -20px;
+        margin-left: 30%;
+    }
+
+    ul#togglechild2.text-left.collapse.show{
+        list-style: none;
+        margin-top: -20px;
+        margin-left: 30%;
+    }
+
+    ul#togglechild3.text-left.collapse.show{
+        list-style: none;
+        margin-top: -20px;
+        margin-left: 30%;
+    }
+
+    .mobile_nav_header{
+        margin-left: 0%;
+    }
+}
+
+     */
