@@ -509,8 +509,9 @@
             <div class="carousel_item" data-section-name="video">
                 <div class="video-overlay1"></div>
                 <div class="landing_wrapper">
-                    <video autoplay id="myvid" class="video w-100" poster="./assets/images/slider_img/slider_img_1.jpg">
+                    <video id="myvid" class="video w-100" poster="./assets/images/slider_img/slider_img_1.jpg" autoplay controls>
                         <source src="./assets/images/DGT.mp4" type="video/mp4">
+                        <source src="./assets/images/DGT.mp4" type="video/ogg">
                     </video>
                 </div>
 
@@ -530,10 +531,12 @@
                             exhibition booths, digital corner design, gaming setups, virtual booths and tours or
                             training programs.
                         </p>
-                        <div class="text-center fp-nav"><a href="#section5">
-                                <button class="btn text-light mt-2 active" type="button" id="btn-subheader-home"
-                                    style="margin-top:10% !important; text-transform: uppercase;" onclick="playPause()">
-                                    Watch Video</button></a>
+                        <div class="text-center fp-nav">
+                            <a href="#section5">
+                            <button class="btn text-light mt-2 active" type="button" id="btn-subheader-home"
+                                style="margin-top:10% !important; text-transform: uppercase;" onclick="playPause()">
+                                Watch Video
+                            </button></a>
                         </div>
                     </div>
                 </div>
@@ -542,14 +545,14 @@
             <!--/First slide -->
         </div>
 
+        <!-- add youtube link in iframe tag -src-"youtube link" -->
+        <!-- example
+            <iframe width="560" height="349"
+                 src="https://youtube.com/embed/youtube-link-code?controls=1&showinfo=0&rel=0&autoplay=1&playlist=youtube-link-code&loop=1&mute=1&scroll=1"
+                  frameborder="0" allowfullscreen></iframe>
+         -->
+         
         <div class="section fp-auto-height-responsive fp-tooltip" id="section5">
-            <!-- <div class="carousel_item " data-section-name="video">
-                <iframe
-                    src="https://youtube.com/embed/OOr4rBnvwNo?controls=1&showinfo=0&rel=0&autoplay=1&playlist=OOr4rBnvwNo&loop=1&mute=1&scroll=1"
-                    class="w-100" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-            </div> -->
             <div class="videoWrapper">
                 <!-- Copy & Pasted from YouTube -->
                 <iframe width="560" height="349"
@@ -645,8 +648,10 @@
                                 </div>
                             </div>
                             <div class="text-center">
+                                <a href="./assets/pdf/DGT- Business Cards.pdf">
                                 <button class="btn text-light mt-2" type="button" id="btn-subheader1"
-                                    style="margin-top:12% !important">Download Brochure</button>
+                                    style="margin-top:10% !important">Download Brochure</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -729,12 +734,14 @@
                                     <p class="text_color" style="margin-left: 75px;" class="p_img_home_section3-2"><b>
                                         Hydraulic</b></p>
                                     </a>
-                                <img src="./assets/images/6 Inlocuire-pg-1-industry-4.0.png" alt=""
-                                    class="img_home_section3-1">
-                                    <a href="./template/products/digital_twin/industry.html" style="text-decoration: none;">
-                                    <p class="text_color" style="margin-left: 67%;" class="p_img_home_section3-1"><b>
-                                        Industry 4.0</b></p>
-                                    </a>
+                                    <div class="" style="position: relative; bottom: 4em;">
+                                        <img src="./assets/images/6 Inlocuire-pg-1-industry-4.0.png" alt=""
+                                        class="img_home_section3-1">
+                                        <a href="./template/products/digital_twin/industry.html" style="text-decoration: none;">
+                                        <p class="text_color" style="margin-left: 67%;" class="p_img_home_section3-1"><b>
+                                            Industry 4.0</b></p>
+                                        </a>
+                                    </div>
                             </div>
                         </div>
 
@@ -786,16 +793,20 @@
                         </a>
                     </div>
                     <div class="col-md-6 col-xs-12 img-center-sm">
-                        <img src="./assets/images/AgriCloud.png" alt="" class="img_home_section2-1 ">
-                        <a href="./template/products/digital_twin/agriculture.html" style="text-decoration: none;">
-                            <p class="text_color" style="margin-left: 5%;"><b class="p_img_home_section2-1"> AgriCloud </b>
-                            </p>
-                        </a>
-                        <img src="./assets/images/interactive-light-panels.png" alt="" class="img_home_section2-3">
-                        <a href="./template/products/hardware/interactive_light.html" style="text-decoration: none;">
-                        <p class="text_color" style="margin-left: 40%;"><b class="p_img_home_section2-2"> Interactive
-                                Light Panels</b></p>
-                        </a>
+                        <div class="" style="position: relative; right: 3em; top: 2em;">
+                            <img src="./assets/images/AgriCloud.png" alt="" class="img_home_section2-1 ">
+                            <a href="./template/products/digital_twin/agriculture.html" style="text-decoration: none;">
+                                <p class="text_color" style="margin-left: 5%;"><b class="p_img_home_section2-1"> AgriCloud </b>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="" style="position: relative; bottom: 2em; left: 2em;">
+                            <img src="./assets/images/interactive-light-panels.png" alt="" class="img_home_section2-3">
+                            <a href="./template/products/hardware/interactive_light.html" style="text-decoration: none;">
+                            <p class="text_color" style="margin-left: 40%;"><b class="p_img_home_section2-2"> Interactive
+                                    Light Panels</b></p>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="text_box w-75 mx-auto text-center">
@@ -806,7 +817,9 @@
                         benefits.<br />Download our brochure to discover our world
                     </p>
                     <div class="text-center">
-                        <button class="btn text-light" type="button" id="btn-subheader1">Download Brochure</button>
+                        <a href="./assets/pdf/DGT- Business Cards.pdf">
+                            <button class="btn text-light" type="button" id="btn-subheader1">Download Brochure</button>
+                        </a>
                     </div>
                 </div>
             </div>

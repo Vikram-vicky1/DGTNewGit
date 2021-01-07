@@ -73,24 +73,24 @@ $('video').each(function(){
 
 
 
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-      var value = $(this).val().toLowerCase();
-      $("ul .nav-link").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-      });
-  });
-});
+// $(document).ready(function(){
+//   $("#myInput").on("keyup", function() {
+//       var value = $(this).val().toLowerCase();
+//       $("ul .nav-link").filter(function() {
+//       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+//       });
+//   });
+// });
 
 
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-      var value = $(this).val().toLowerCase();
-      $(".card p").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-      });
-  });
-});
+// $(document).ready(function(){
+//   $("#myInput").on("keyup", function() {
+//       var value = $(this).val().toLowerCase();
+//       $(".card p").filter(function() {
+//       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+//       });
+//   });
+// });
 
 
 // mobile swipe up and left
