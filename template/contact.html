@@ -8,6 +8,7 @@
     <title>DGT</title>
     <link rel="icon" href="../assets/images/favicon.png" type="image/gif" sizes="64x64">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/fullpage.css">
     <link rel="stylesheet" href="../assets/css/style.css">
@@ -51,8 +52,32 @@
                 </li>
                 <li class="nav-item mx-auto d-lg-block d-none">
                     <div class="input-icons mt-1">
-                        <i class="fa icon">&#xf002;</i> 
-                        <input class="input-field" id="myInput" type="text"><span><a class="px-2" style="color: #2f1b5d; font-family: 'robotoBold';"  href="#">EN</a></span>
+                        <span class="dropdown">
+                            <!-- <i class="fa icon">&#xf002;</i> 
+                            <input class="input-field" id="myInput" type="text"> -->
+                            <i class="fa icon">&#xf002;</i>
+                            <input class="btn btn-light input-field searchInput" onkeyup="searchFunction" type="text" id="dropdownMenuButton" data-toggle="dropdown" 
+                            aria-haspopup="true" aria-expanded="false" style="background-color: transparent; border: 1px solid;">
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="height: 350px; overflow-y: scroll;">
+                                  <ul id = "myUL" style="list-style: none; padding: 0; margin: 0;">
+                                      <li id="myLI"><a class="dropdown-item " href="../template/products/software.html">Software</a></li>
+                                      <li id="myLI"><a class="dropdown-item " href="../template/products/hardware.html">Hardware</a></li>
+                                      <li id="myLI"><a class="dropdown-item " href="../template/products/digitaltwin.html">Digital Twin</a></li>
+                                      <li id="myLI"><a class="dropdown-item " href="../template/services/services.html">Services</a></li>
+                                      <li id="myLI"><a class="dropdown-item " href="../template/products/software.html">Animations</a></li>
+                                      <li id="myLI"><a class="dropdown-item " href="../template/products/software.html">Power 3D</a></li>
+                                      <li id="myLI"><a class="dropdown-item " href="../template/products/software.html">Animations</a></li>
+                                      <li id="myLI"><a class="dropdown-item " href="../template/products/software.html">Digital Twin</a></li>
+                                      <li id="myLI"><a class="dropdown-item " href="../template/products/software.html">Training 3D</a></li>
+                                      <li id="myLI"><a class="dropdown-item " href="../template/products/software.html">Services 3D</a></li>
+                                      <li id="myLI"><a class="dropdown-item " href="../template/products/software.html">VR AR</a></li>
+                                      <li id="myLI"><a class="dropdown-item " href="../template/products/software.html">Virtual Tours</a></li>
+                                      
+                                  </ul>
+                              </div>
+                            
+                        </span>
+                        <span><a class="px-2" style="color: #2f1b5d; font-family: 'robotoBold';"  href="#">EN</a></span>
                     </div>
                 </li>
                     <li class="d-lg-none d-block text-left">
@@ -792,6 +817,7 @@
 <!-- <script src="./assets/js/app.js"></script> -->
 <!-- <script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script> -->
 <script src="../assets/js/routes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 <script src="../assets/js/main.js"></script>
 <script src="../assets/js/script.js"></script>
 <script type="text/javascript">
@@ -807,6 +833,10 @@
         }
 
     });
+    // In your Javascript (external .js resource or <script> tag)
+$(document).ready(function() {
+    $('.js-example-basic-single').select2();
+});
 </script>
 </body>
 
